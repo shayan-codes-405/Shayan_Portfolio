@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shayan Akhtar | Portfolio</title>
+    <title>Shayan Akhtar | Software Developer & Data Analyst Portfolio</title>
+    <meta name="description" content="Portfolio of Shayan Akhtar - Aspiring Software Developer & Data Analyst proficient in C++, Java, Python, Web Development, and Data Analytics.">
+    <meta name="keywords" content="Shayan Akhtar, Portfolio, Software Developer, Data Analyst, Java, Python, C++, Power BI, React, Web Developer">
+    <meta name="author" content="Shayan Akhtar">
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Shayan Akhtar | Portfolio">
+    <meta property="og:description" content="I solve real-world problems using data & code. Explore my software development and data analytics projects.">
+    <meta property="og:image" content="Profile_pic.png">
+    <meta property="og:type" content="website">
     <!-- Google Fonts: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Devicon -->
@@ -15,6 +23,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
 
     <!-- Loading Screen -->
     <div id="loader">
@@ -31,9 +42,6 @@
         <div class="nav-container">
             <a href="#home" class="logo">Shayan Akhtar</a>
             <div class="nav-controls" style="display: flex; align-items: center; gap: 1rem;">
-                <button id="theme-toggle" aria-label="Toggle Dark/Light Mode" style="background: transparent; border: none; color: var(--text-primary); font-size: 1.2rem; cursor: pointer; transition: 0.3s ease;">
-                    <i class="fas fa-sun"></i>
-                </button>
                 <div class="hamburger">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -51,12 +59,13 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero section-padding">
+        <canvas id="hero-particles"></canvas>
         <div class="hero-container">
             <div class="hero-left fade-in">
                 <h1>Hi, I'm <span class="highlight">Shayan Akhtar</span></h1>
-                <h2>Developer + Data Enthusiast</h2>
+                <h2><span id="typewriter"></span><span class="typewriter-cursor">|</span></h2>
                 <p class="tagline">"I solve real-world problems using data & code"</p>
-                <p class="subtitle" style="font-weight: 500; color: var(--text-primary); margin-bottom: 2rem;">Aspiring Software Developer & Data Enthusiast</p>
+                <p class="subtitle" style="font-weight: 500; color: var(--text-secondary); margin-bottom: 2rem;">B.Tech Computer Science Student | Backend & Data Analytics</p>
                 
                 <div class="social-icons">
                     <a href="https://github.com/shayan-codes-405" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -146,108 +155,96 @@
                     </div>
                     <div class="project-info">
                         <h3>Languages</h3>
-                        <p class="project-desc">Core programming logic, syntax, and fundamental application development.</p>
+                        <p class="project-desc">Core programming languages for application logic, object-oriented software, and web development.</p>
                         <div class="tech-stack">
-                            <span>C++</span>
                             <span>Java</span>
                             <span>Python</span>
-                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
                         </div>
                         <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-skill-1">Read More</button>
                     </div>
                 </div>
 
-                <!-- Skill 2: Web -->
+                <!-- Skill 2: Libraries -->
                 <div class="project-card glass-card fade-in">
                     <div class="project-img-placeholder" style="background: linear-gradient(to bottom right, rgba(249, 115, 22, 0.1), transparent); color: #f97316;">
-                        <i class="fas fa-globe"></i>
+                        <i class="fas fa-chart-bar"></i>
                     </div>
                     <div class="project-info">
-                        <h3>Web Technologies</h3>
-                        <p class="project-desc">Creation of responsive, accessible, and high-performance web interfaces.</p>
+                        <h3>Libraries</h3>
+                        <p class="project-desc">Data analysis, machine learning model building, statistical visualization, and numerical computation.</p>
                         <div class="tech-stack">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>Bootstrap</span>
+                            <span>Pandas</span>
+                            <span>Seaborn</span>
+                            <span>Matplotlib</span>
+                            <span>Scikit-learn</span>
+                            <span>NumPy</span>
                         </div>
                         <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-skill-2">Read More</button>
                     </div>
                 </div>
 
-                <!-- Skill 3: Frameworks -->
-                <div class="project-card glass-card fade-in">
-                    <div class="project-img-placeholder" style="background: linear-gradient(to bottom right, rgba(16, 185, 129, 0.1), transparent); color: #10b981;">
-                        <i class="fas fa-layer-group"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>Frameworks</h3>
-                        <p class="project-desc">Rapid backend architecture and advanced single-page applications.</p>
-                        <div class="tech-stack">
-                            <span>Flask</span>
-                            <span>React.js</span>
-                            <span>Spring Boot</span>
-                        </div>
-                        <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-skill-3">Read More</button>
-                    </div>
-                </div>
-
-                <!-- Skill 4: Databases -->
+                <!-- Skill 3: Databases -->
                 <div class="project-card glass-card fade-in">
                     <div class="project-img-placeholder" style="background: linear-gradient(to bottom right, rgba(236, 72, 153, 0.1), transparent); color: #ec4899;">
                         <i class="fas fa-database"></i>
                     </div>
                     <div class="project-info">
                         <h3>Databases</h3>
-                        <p class="project-desc">Data schema design, relational storage, and optimization.</p>
+                        <p class="project-desc">Relational data modeling, structured query design, data integrity, and persistent storage management.</p>
                         <div class="tech-stack">
                             <span>MySQL</span>
-                            <span>PostgreSQL</span>
-                            <span>MongoDB</span>
                         </div>
-                        <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-skill-4">Read More</button>
+                        <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-skill-3">Read More</button>
                     </div>
                 </div>
 
-                <!-- Skill 5: Tools -->
+                <!-- Skill 4: Tools & Platforms -->
                 <div class="project-card glass-card fade-in">
                     <div class="project-img-placeholder" style="background: linear-gradient(to bottom right, rgba(168, 85, 247, 0.1), transparent); color: #a855f7;">
                         <i class="fas fa-tools"></i>
                     </div>
                     <div class="project-info">
-                        <h3>Tools & Cloud</h3>
-                        <p class="project-desc">Version control, deployment, and data visualization mapping.</p>
+                        <h3>Tools & Platforms</h3>
+                        <p class="project-desc">Version control, IDE environments, business intelligence dashboards, and spreadsheet data modeling.</p>
                         <div class="tech-stack">
-                            <span>Git/GitHub</span>
-                            <span>Postman</span>
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>VS Code</span>
+                            <span>IntelliJ IDEA</span>
+                            <span>Excel</span>
                             <span>Power BI</span>
+                        </div>
+                        <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-skill-4">Read More</button>
+                    </div>
+                </div>
+
+                <!-- Skill 5: Soft Skills -->
+                <div class="project-card glass-card fade-in">
+                    <div class="project-img-placeholder" style="background: linear-gradient(to bottom right, rgba(16, 185, 129, 0.1), transparent); color: #10b981;">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Soft Skills</h3>
+                        <p class="project-desc">Key analytical and interpersonal competencies for productive, high-impact technical collaboration.</p>
+                        <div class="tech-stack">
+                            <span>Problem-Solving</span>
+                            <span>Team Collaboration</span>
+                            <span>Time Management</span>
+                            <span>Adaptability</span>
                         </div>
                         <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-skill-5">Read More</button>
                     </div>
                 </div>
 
-                <!-- Skill 6: OS -->
-                <div class="project-card glass-card fade-in">
-                    <div class="project-img-placeholder" style="background: linear-gradient(to bottom right, rgba(20, 184, 166, 0.1), transparent); color: #14b8a6;">
-                        <i class="fas fa-desktop"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>Operating Systems</h3>
-                        <p class="project-desc">Configuring and developing within robust operating environments.</p>
-                        <div class="tech-stack">
-                            <span>Linux</span>
-                            <span>Windows</span>
-                            <span>Ubuntu</span>
-                        </div>
-                        <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-skill-6">Read More</button>
-                    </div>
-                </div>
             </div>
 
         </div>
     </section>
 
     <!-- Skill Modals -->
-    <!-- Modal Skill 1 -->
+    <!-- Modal Skill 1: Languages -->
     <div class="modal" id="modal-skill-1">
         <div class="modal-content glass-card">
             <span class="close-modal">&times;</span>
@@ -256,72 +253,50 @@
             </div>
             <h2 class="modal-title">Languages</h2>
             <div class="tech-stack modal-tags">
-                <span>C++</span>
                 <span>Java</span>
                 <span>Python</span>
-                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
             </div>
             <p class="modal-desc">
-                Comprehensive understanding and application of modern programming languages for algorithm design, application development, and system engineering.
+                Core programming languages utilized for algorithm design, object-oriented software engineering, data analysis, and web front-end structure.
             </p>
             <ul class="modal-highlights">
-                <li>Object-Oriented Programming (OOP) in C++ and Java.</li>
-                <li>Data Structures & Algorithms efficiency and scaling.</li>
-                <li>Advanced Logic building and competitive problem solving.</li>
+                <li>Object-Oriented Programming (OOP) in Java and Python.</li>
+                <li>Clean algorithm development, data structure optimization, and logic building.</li>
+                <li>Responsive Web design structures using Semantic HTML and CSS styling.</li>
             </ul>
         </div>
     </div>
 
-    <!-- Modal Skill 2 -->
+    <!-- Modal Skill 2: Libraries -->
     <div class="modal" id="modal-skill-2">
         <div class="modal-content glass-card">
             <span class="close-modal">&times;</span>
             <div class="modal-banner" style="color: #f97316;">
-                <i class="fas fa-globe"></i>
+                <i class="fas fa-chart-bar"></i>
             </div>
-            <h2 class="modal-title">Web Technologies</h2>
+            <h2 class="modal-title">Libraries</h2>
             <div class="tech-stack modal-tags">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>Bootstrap</span>
+                <span>Pandas</span>
+                <span>Seaborn</span>
+                <span>Matplotlib</span>
+                <span>Scikit-learn</span>
+                <span>NumPy</span>
             </div>
             <p class="modal-desc">
-                Creation of beautiful, responsive, accessible, and high-performance web interfaces from the ground up utilizing the core pillars of the web.
+                Data science, exploratory analysis, numerical processing, machine learning model building, and statistical data visualization.
             </p>
             <ul class="modal-highlights">
-                <li>Semantic HTML structure & SEO basics.</li>
-                <li>Advanced CSS layouts utilizing Flexbox and Grid.</li>
-                <li>Vanilla JavaScript DOM manipulation and asynchronous calls.</li>
+                <li>Data cleaning, data preprocessing, and feature engineering with Pandas & NumPy.</li>
+                <li>Supervised machine learning classification models with Scikit-learn.</li>
+                <li>Statistical chart creation and insight visualization using Matplotlib & Seaborn.</li>
             </ul>
         </div>
     </div>
 
-    <!-- Modal Skill 3 -->
+    <!-- Modal Skill 3: Databases -->
     <div class="modal" id="modal-skill-3">
-        <div class="modal-content glass-card">
-            <span class="close-modal">&times;</span>
-            <div class="modal-banner" style="color: #10b981;">
-                <i class="fas fa-layer-group"></i>
-            </div>
-            <h2 class="modal-title">Frameworks</h2>
-            <div class="tech-stack modal-tags">
-                <span>Flask</span>
-                <span>React.js</span>
-                <span>Spring Boot</span>
-            </div>
-            <p class="modal-desc">
-                Utilizing robust backend and frontend frameworks to architect scalable Single Page Applications (SPAs) and robust RESTful APIs.
-            </p>
-            <ul class="modal-highlights">
-                <li>React.js component-based SPA architecture and dynamic routing.</li>
-                <li>Spring Boot & Flask REST API development and data flow handling.</li>
-                <li>Data analysis and dashboard integration strictly using Pandas/Streamlit.</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Modal Skill 4 -->
-    <div class="modal" id="modal-skill-4">
         <div class="modal-content glass-card">
             <span class="close-modal">&times;</span>
             <div class="modal-banner" style="color: #ec4899;">
@@ -330,64 +305,66 @@
             <h2 class="modal-title">Databases</h2>
             <div class="tech-stack modal-tags">
                 <span>MySQL</span>
-                <span>PostgreSQL</span>
-                <span>MongoDB</span>
             </div>
             <p class="modal-desc">
-                Designing robust data schemas, optimizing structural queries, and guaranteeing seamless data persistence across applications.
+                Designing robust relational database schemas, optimizing SQL queries, and ensuring seamless data persistence for software applications.
             </p>
             <ul class="modal-highlights">
-                <li>Relational database schema design and intense query optimization.</li>
-                <li>Stringent data integrity enforcement and normalization mapping.</li>
-                <li>Scaling handling logic for heavy application backends.</li>
+                <li>Relational database schema design and normalization.</li>
+                <li>SQL query formulation and data retrieval optimization.</li>
+                <li>Database connection integration with Java (JDBC) and backend services.</li>
             </ul>
         </div>
     </div>
 
-    <!-- Modal Skill 5 -->
-    <div class="modal" id="modal-skill-5">
+    <!-- Modal Skill 4: Tools & Platforms -->
+    <div class="modal" id="modal-skill-4">
         <div class="modal-content glass-card">
             <span class="close-modal">&times;</span>
             <div class="modal-banner" style="color: #a855f7;">
                 <i class="fas fa-tools"></i>
             </div>
-            <h2 class="modal-title">Tools & Cloud</h2>
+            <h2 class="modal-title">Tools & Platforms</h2>
             <div class="tech-stack modal-tags">
-                <span>Git/GitHub</span>
-                <span>Postman</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Visual Studio Code</span>
+                <span>IntelliJ IDEA</span>
+                <span>Microsoft Excel</span>
                 <span>Power BI</span>
             </div>
             <p class="modal-desc">
-                Deployment and collaboration tools for rapid delivery, strict code hygiene, continuous integration, and deep data visualization mapping.
+                Development environments, version control systems, business intelligence platforms, and advanced analytics spreadsheet tools.
             </p>
             <ul class="modal-highlights">
-                <li>Strict version control tracking and team-level branching models.</li>
-                <li>API functional testing and extensive payload verification via Postman.</li>
-                <li>Enterprise-level insight distillation exclusively utilizing Power BI.</li>
+                <li>Git version control and GitHub code repository management.</li>
+                <li>Enterprise-level data visualization dashboard design in Power BI using DAX & Power Query.</li>
+                <li>Productivity & IDE development using IntelliJ IDEA and VS Code.</li>
             </ul>
         </div>
     </div>
 
-    <!-- Modal Skill 6 -->
-    <div class="modal" id="modal-skill-6">
+    <!-- Modal Skill 5: Soft Skills -->
+    <div class="modal" id="modal-skill-5">
         <div class="modal-content glass-card">
             <span class="close-modal">&times;</span>
-            <div class="modal-banner" style="color: #14b8a6;">
-                <i class="fas fa-desktop"></i>
+            <div class="modal-banner" style="color: #10b981;">
+                <i class="fas fa-users"></i>
             </div>
-            <h2 class="modal-title">Operating Systems</h2>
+            <h2 class="modal-title">Soft Skills</h2>
             <div class="tech-stack modal-tags">
-                <span>Linux</span>
-                <span>Windows</span>
-                <span>Ubuntu</span>
+                <span>Problem-Solving</span>
+                <span>Team Collaboration</span>
+                <span>Time Management</span>
+                <span>Adaptability</span>
             </div>
             <p class="modal-desc">
-                Confidently establishing workflow protocols within diverse operating systems, spanning simple desktop environments to deep server-side logic handling.
+                Essential professional skills that foster efficient teamwork, proactive problem solving, and effective delivery on complex projects.
             </p>
             <ul class="modal-highlights">
-                <li>Linux command-line interface execution and bash scripting.</li>
-                <li>Cross-platform deployment stability checking and verification.</li>
-                <li>Environment setup optimization safely separating development from production.</li>
+                <li>Analytical problem solving and logical bug diagnosis.</li>
+                <li>Effective collaboration across cross-functional student teams and community initiatives.</li>
+                <li>Agile time management and quick adaptability to new technologies.</li>
             </ul>
         </div>
     </div>
@@ -396,11 +373,44 @@
     <section id="projects" class="projects section-padding">
         <div class="container">
             <h2 class="section-title">Projects</h2>
+            
+            <!-- Project Filter Controls -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="data"><i class="fas fa-chart-pie"></i> Data Analytics</button>
+                <button class="filter-btn" data-filter="web"><i class="fas fa-laptop-code"></i> Web Dev</button>
+                <button class="filter-btn" data-filter="java"><i class="fas fa-code"></i> Java & Desktop</button>
+            </div>
+
             <div class="projects-flex">
                 
+                <!-- Telecom Customer Churn Prediction -->
+                <div class="project-card glass-card fade-in" data-category="data">
+                    <div class="project-card-img-wrapper">
+                        <img src="Telecom Churn.png" class="real-project-img" alt="Telecom Customer Churn Prediction">
+                    </div>
+                    <div class="project-info">
+                        <h3>Telecom Customer Churn Prediction</h3>
+                        <p class="project-desc">Engineered an end-to-end machine learning solution to predict telecom customer churn using account information, service usage, and support history.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>Streamlit</span>
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-outline btn-sm trigger-modal" data-modal="modal-project-churn">Read More</button>
+                            <a href="https://churn-predictor-telecom-customer.streamlit.app/" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Live App</a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Project 1 -->
-                <div class="project-card glass-card fade-in">
-                    <img src="Java UI.png" class="real-project-img" alt="EasyInvoice Pro">
+                <div class="project-card glass-card fade-in" data-category="java">
+                    <div class="project-card-img-wrapper">
+                        <img src="Java UI.png" class="real-project-img" alt="EasyInvoice Pro">
+                    </div>
                     <div class="project-info">
                         <h3>EasyInvoice Pro</h3>
                         <p class="project-desc">Smart Billing System featuring robust product management, tax calculations, and instant custom invoice generation.</p>
@@ -417,8 +427,10 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card glass-card fade-in">
-                    <img src="FraudLens UI 1.png" class="real-project-img" alt="Transaction Fraud Intelligence Dashboard">
+                <div class="project-card glass-card fade-in" data-category="data">
+                    <div class="project-card-img-wrapper">
+                        <img src="FraudLens UI 1.png" class="real-project-img" alt="Transaction Fraud Intelligence Dashboard">
+                    </div>
                     <div class="project-info">
                         <h3>FraudLens 360 - Transaction Fraud Intelligence Dashboard</h3>
                         <p class="project-desc">A powerful data analysis dashboard designed to detect fraudulent and malicious behavior, with clear patterns and prevention alerts.</p>
@@ -436,8 +448,10 @@
                 <!-- Project 3 removed -->
                 
                 <!-- Project 4 -->
-                <div class="project-card glass-card fade-in">
-                    <img src="excel 1.png" class="real-project-img" alt="FraudLens-360-Transaction-Fraud-Intelligence-Dashboard">
+                <div class="project-card glass-card fade-in" data-category="data">
+                    <div class="project-card-img-wrapper">
+                        <img src="excel 1.png" class="real-project-img" alt="FraudLens-360-Transaction-Fraud-Intelligence-Dashboard">
+                    </div>
                     <div class="project-info">
                         <h3>Transaction Fraud Intelligence Dashboard</h3>
                         <p class="project-desc">Interactive dashboard analyzing 20,000+ bank transactions to detect fraud patterns, regional trends, and merchant insights.</p>
@@ -453,8 +467,10 @@
                 </div>
 
                 <!-- Project 5 -->
-                <div class="project-card glass-card fade-in">
-                    <img src="bank 1.png" class="real-project-img" alt="Bank Transaction Data Analysis Using Python">
+                <div class="project-card glass-card fade-in" data-category="data">
+                    <div class="project-card-img-wrapper">
+                        <img src="bank 1.png" class="real-project-img" alt="Bank Transaction Data Analysis Using Python">
+                    </div>
                     <div class="project-info">
                         <h3>Bank Transaction Data Analysis Using Python</h3>
                         <p class="project-desc">Comprehensive Python analysis of bank transactions using Pandas, NumPy, Matplotlib, and Seaborn for data cleaning, visualization, and anomaly detection.</p>
@@ -473,8 +489,10 @@
                 </div>
                 
                 <!-- Project 6 -->
-                <div class="project-card glass-card fade-in">
-                    <img src="EcoGrow 1.png" class="real-project-img" alt="ECOGROW Website">
+                <div class="project-card glass-card fade-in" data-category="web">
+                    <div class="project-card-img-wrapper">
+                        <img src="EcoGrow 1.png" class="real-project-img" alt="ECOGROW Website">
+                    </div>
                     <div class="project-info">
                         <h3>ECOGROW Website</h3>
                         <p class="project-desc">A digital green platform dedicated to environmental awareness, boasting an integrated community donation system.</p>
@@ -516,9 +534,9 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3 class="timeline-degree">Intermediate</h3>
-                        <h4 class="timeline-institute">Narayana</h4>
+                        <h4 class="timeline-institute">Narayana School</h4>
                         <div class="timeline-footer">
-                            <span class="timeline-marks">73%</span>
+                            <span class="timeline-marks">65.4%</span>
                         </div>
                     </div>
                 </div>
@@ -540,6 +558,40 @@
     </section>
 
     <!-- Project Modals -->
+    <!-- Modal Telecom Customer Churn Prediction -->
+    <div class="modal" id="modal-project-churn">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            
+            <div class="modal-gallery mt-1">
+                <img src="Telecom Churn.png" alt="Telecom Churn Dashboard Slide 1">
+                <img src="Telecom Churn 2.png" alt="Telecom Churn Model Analytics Slide 2">
+            </div>
+
+            <h2 class="modal-title">Telecom Customer Churn Prediction</h2>
+            <div class="tech-stack modal-tags">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Matplotlib</span>
+                <span>Seaborn</span>
+                <span>Scikit-learn</span>
+                <span>Streamlit</span>
+            </div>
+            <p class="modal-desc">
+                Engineered an end-to-end machine learning solution to predict telecom customer churn using customer account information, service usage patterns, and support history, enabling proactive customer retention strategies.
+            </p>
+            <ul class="modal-highlights">
+                <li>Engineered an end-to-end machine learning solution to predict telecom customer churn using customer account information, service usage patterns, and support history, enabling proactive customer retention strategies.</li>
+                <li>Performed exploratory data analysis (EDA), feature engineering, data preprocessing, model training, and performance evaluation to identify key factors influencing customer churn.</li>
+                <li>Deployed an interactive Streamlit web application that delivers real-time churn predictions, probability scores, risk categorization, feature importance visualization, and downloadable prediction reports.</li>
+            </ul>
+            <div class="modal-footer">
+                <a href="https://churn-predictor-telecom-customer.streamlit.app/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Launch Live Streamlit App</a>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal 1 -->
     <div class="modal" id="modal-project-1">
         <div class="modal-content glass-card">
@@ -1001,7 +1053,9 @@
             <p class="footer-bottom">Turning ideas into reality through code</p>
             <p class="copyright">&copy; 2024 Shayan Akhtar. All rights reserved.</p>
         </div>
-    </footer>
+    <!-- Back to Top Button & Toast Container -->
+    <div id="toast-container"></div>
+    <button id="back-to-top" aria-label="Back to Top"><i class="fas fa-chevron-up"></i></button>
 
     <script src="script.js"></script>
 </body>

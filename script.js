@@ -133,27 +133,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Theme Toggle Logic
-    const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
-    
-    // Check local storage for theme
-    const savedTheme = localStorage.getItem('portfolio-theme');
-    if (savedTheme === 'light') {
-        body.classList.add('light-mode');
-        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-    }
-
-    themeToggle.addEventListener('click', () => {
-        body.classList.toggle('light-mode');
-        if (body.classList.contains('light-mode')) {
-            themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-            localStorage.setItem('portfolio-theme', 'light');
-        } else {
-            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-            localStorage.setItem('portfolio-theme', 'dark');
-        }
-    });
+    // Enforce single unified theme
+    document.body.classList.remove('light-mode');
+    localStorage.removeItem('portfolio-theme');
 
     // EmailJS Contact Form Handling
     // SETUP INSTRUCTIONS:
@@ -211,4 +193,289 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })();
 
+    // ----------------------------------------------------
+    // Toast Notification System
+    // ----------------------------------------------------
+    function showToast(message, type = 'info') {
+        const toastContainer = document.getElementById('toast-container');
+        if (!toastContainer) return;
+
+        const toast = document.createElement('div');
+        toast.className = `toast toast-${type}`;
+        
+        const icon = type === 'success' ? 'fa-check-circle' : 'fa-info-circle';
+        toast.innerHTML = `<i class="fas ${icon}"></i> <span>${message}</span>`;
+        
+        toastContainer.appendChild(toast);
+        
+        setTimeout(() => {
+            toast.style.animation = 'toastSlideOut 0.3s ease forwards';
+            setTimeout(() => toast.remove(), 300);
+        }, 3500);
+    }
+
+    // Attach toast to Download CV buttons
+    document.querySelectorAll('a[download]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            showToast('Downloading Resume (PDF)...', 'success');
+        });
+    });
+
+    // ----------------------------------------------------
+    // Scroll Progress Bar & Back-to-Top Button
+    // ----------------------------------------------------
+    const scrollProgress = document.getElementById('scroll-progress');
+    const backToTopBtn = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', () => {
+        const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+        if (totalHeight > 0) {
+            const progress = (window.scrollY / totalHeight) * 100;
+            if (scrollProgress) scrollProgress.style.width = `${progress}%`;
+        }
+
+        if (backToTopBtn) {
+            if (window.scrollY > 400) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        }
+    });
+
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    // ----------------------------------------------------
+    // Typewriter Effect
+    // ----------------------------------------------------
+    const typewriterEl = document.getElementById('typewriter');
+    if (typewriterEl) {
+        const words = [
+            'Developer + Data Enthusiast',
+            'Software Engineer',
+            'Data Analyst',
+            'Java & Python Programmer',
+            'Problem Solver'
+        ];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typeSpeed = 100;
+
+        function type() {
+            const currentWord = words[wordIndex];
+            
+            if (isDeleting) {
+                typewriterEl.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+                typeSpeed = 40;
+            } else {
+                typewriterEl.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+                typeSpeed = 90;
+            }
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                isDeleting = true;
+                typeSpeed = 1800; // Pause at end of word
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typeSpeed = 400; // Pause before typing next word
+            }
+
+            setTimeout(type, typeSpeed);
+        }
+
+        type();
+    }
+
+    // ----------------------------------------------------
+    // Interactive Canvas Particles Background in Hero
+    // ----------------------------------------------------
+    const canvas = document.getElementById('hero-particles');
+    if (canvas) {
+        const ctx = canvas.getContext('2d');
+        let width = canvas.width = canvas.parentElement.offsetWidth;
+        let height = canvas.height = canvas.parentElement.offsetHeight;
+
+        let particles = [];
+        const particleCount = Math.min(Math.floor(width / 25), 45);
+        let mouse = { x: null, y: null, radius: 120 };
+
+        window.addEventListener('resize', () => {
+            if (!canvas.parentElement) return;
+            width = canvas.width = canvas.parentElement.offsetWidth;
+            height = canvas.height = canvas.parentElement.offsetHeight;
+        });
+
+        const heroSection = document.getElementById('home');
+        if (heroSection) {
+            heroSection.addEventListener('mousemove', (e) => {
+                const rect = canvas.getBoundingClientRect();
+                mouse.x = e.clientX - rect.left;
+                mouse.y = e.clientY - rect.top;
+            });
+
+            heroSection.addEventListener('mouseleave', () => {
+                mouse.x = null;
+                mouse.y = null;
+            });
+        }
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * width;
+                this.y = Math.random() * height;
+                this.vx = (Math.random() - 0.5) * 0.8;
+                this.vy = (Math.random() - 0.5) * 0.8;
+                this.radius = Math.random() * 2 + 1;
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+
+                if (this.x < 0 || this.x > width) this.vx *= -1;
+                if (this.y < 0 || this.y > height) this.vy *= -1;
+
+                // Mouse interaction
+                if (mouse.x !== null && mouse.y !== null) {
+                    const dx = mouse.x - this.x;
+                    const dy = mouse.y - this.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < mouse.radius) {
+                        const angle = Math.atan2(dy, dx);
+                        const force = (mouse.radius - dist) / mouse.radius;
+                        this.x -= Math.cos(angle) * force * 2;
+                        this.y -= Math.sin(angle) * force * 2;
+                    }
+                }
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(59, 130, 246, 0.5)';
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < particleCount; i++) {
+            particles.push(new Particle());
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, width, height);
+
+            // Connect nearby particles
+            for (let a = 0; a < particles.length; a++) {
+                for (let b = a + 1; b < particles.length; b++) {
+                    const dx = particles[a].x - particles[b].x;
+                    const dy = particles[a].y - particles[b].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+
+                    if (dist < 110) {
+                        ctx.beginPath();
+                        ctx.strokeStyle = `rgba(59, 130, 246, ${0.25 * (1 - dist / 110)})`;
+                        ctx.lineWidth = 0.8;
+                        ctx.moveTo(particles[a].x, particles[a].y);
+                        ctx.lineTo(particles[b].x, particles[b].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+
+            requestAnimationFrame(animateParticles);
+        }
+
+        animateParticles();
+    }
+
+    // ----------------------------------------------------
+    // Project Filtering Logic
+    // ----------------------------------------------------
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filter = btn.getAttribute('data-filter');
+
+            projectCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filter === 'all' || category === filter) {
+                    card.classList.remove('filter-hidden');
+                } else {
+                    card.classList.add('filter-hidden');
+                }
+            });
+        });
+    });
+
+    // ----------------------------------------------------
+    // Dynamic Mouse Spotlight Effect on Glass Cards
+    // ----------------------------------------------------
+    const glassCards = document.querySelectorAll('.glass-card');
+    glassCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+        });
+    });
+
+    // ----------------------------------------------------
+    // Modal Gallery Navigation (Next/Prev buttons)
+    // ----------------------------------------------------
+    const modalGalleries = document.querySelectorAll('.modal-gallery');
+    modalGalleries.forEach(gallery => {
+        const images = gallery.querySelectorAll('img');
+        if (images.length > 1) {
+            // Wrap in modal-gallery-wrapper if not already
+            const wrapper = document.createElement('div');
+            wrapper.className = 'modal-gallery-wrapper';
+            gallery.parentNode.insertBefore(wrapper, gallery);
+            wrapper.appendChild(gallery);
+
+            const prevBtn = document.createElement('button');
+            prevBtn.className = 'gallery-control-btn prev-btn';
+            prevBtn.innerHTML = '<i class="fas fa-chevron-left"></i>';
+            prevBtn.ariaLabel = 'Previous image';
+
+            const nextBtn = document.createElement('button');
+            nextBtn.className = 'gallery-control-btn next-btn';
+            nextBtn.innerHTML = '<i class="fas fa-chevron-right"></i>';
+            nextBtn.ariaLabel = 'Next image';
+
+            wrapper.appendChild(prevBtn);
+            wrapper.appendChild(nextBtn);
+
+            prevBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                gallery.scrollBy({ left: -gallery.clientWidth, behavior: 'smooth' });
+            });
+
+            nextBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                gallery.scrollBy({ left: gallery.clientWidth, behavior: 'smooth' });
+            });
+        }
+    });
+
 });
+
