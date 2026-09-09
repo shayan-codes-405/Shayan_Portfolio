@@ -1116,56 +1116,86 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section (ULTRA-MODERN REDESIGN) -->
     <section id="contact" class="contact section-padding">
         <div class="container fade-in">
             <div class="section-header">
+                <div class="contact-availability-badge">
+                    <span class="status-dot"></span> Available for Data Science & ML Opportunities
+                </div>
                 <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
-                <p class="section-subtitle">I'm currently seeking new full-time Data Science, Data Analytics, and
-                    Machine Learning opportunities.</p>
+                <p class="section-subtitle">Whether you have a role opportunity, project inquiry, or technical question, feel free to send a direct message!</p>
             </div>
 
-            <div class="contact-grid">
-                <div class="contact-info glass-card">
-                    <h3>Let's Connect</h3>
-                    <p>Whether you have an inquiry, project proposal, or career opportunity, feel free to reach out
-                        directly via email or social links!</p>
-                    <div class="contact-links">
-                        <a href="mailto:shayanakhtar405@gmail.com" class="contact-link">
-                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
-                            <span>shayanakhtar405@gmail.com</span>
+            <!-- Unified Contact Portal Wrapper -->
+            <div class="contact-wrapper glass-card">
+
+                <!-- Left Column: Channel Grid & Direct Links -->
+                <div class="contact-channels-side">
+                    <div class="channels-header">
+                        <h3><i class="fas fa-paper-plane" style="color: var(--accent-cyan);"></i> Direct Channels</h3>
+                        <p>Connect through official professional platforms or email directly.</p>
+                    </div>
+
+                    <div class="channels-grid">
+                        <a href="mailto:shayanakhtar405@gmail.com" class="channel-tile channel-email">
+                            <div class="channel-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="channel-info">
+                                <span class="channel-label">Email Address</span>
+                                <span class="channel-value">shayanakhtar405@gmail.com</span>
+                            </div>
+                            <div class="channel-arrow"><i class="fas fa-arrow-right"></i></div>
                         </a>
-                        <a href="https://github.com/shayan-codes-405" target="_blank" class="contact-link">
-                            <div class="icon-box"><i class="fab fa-github"></i></div>
-                            <span>github.com/shayan-codes-405</span>
+
+                        <a href="https://www.linkedin.com/in/shayan-akhtar-492456393" target="_blank" class="channel-tile channel-linkedin">
+                            <div class="channel-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div class="channel-info">
+                                <span class="channel-label">LinkedIn Network</span>
+                                <span class="channel-value">shayan-akhtar-492456393</span>
+                            </div>
+                            <div class="channel-arrow"><i class="fas fa-external-link-alt"></i></div>
                         </a>
-                        <a href="https://www.linkedin.com/in/shayan-akhtar-492456393" target="_blank"
-                            class="contact-link">
-                            <div class="icon-box"><i class="fab fa-linkedin"></i></div>
-                            <span>linkedin.com/in/shayan-akhtar-492456393</span>
+
+                        <a href="https://github.com/shayan-codes-405" target="_blank" class="channel-tile channel-github">
+                            <div class="channel-icon"><i class="fab fa-github"></i></div>
+                            <div class="channel-info">
+                                <span class="channel-label">GitHub Projects</span>
+                                <span class="channel-value">shayan-codes-405</span>
+                            </div>
+                            <div class="channel-arrow"><i class="fas fa-external-link-alt"></i></div>
                         </a>
                     </div>
                 </div>
 
-                <div class="contact-form-container glass-card">
-                    <form class="contact-form" id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="from_name" required placeholder="John Doe">
+                <!-- Right Column: Interactive Portal Form (EmailJS 100% Intact) -->
+                <div class="contact-form-side">
+                    <form class="contact-portal-form" id="contact-form">
+                        <div class="form-header">
+                            <h3><i class="fas fa-envelope-open-text" style="color: var(--accent-indigo);"></i> Send a Message</h3>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="from_email" required placeholder="john@example.com">
+
+                        <div class="form-grid-2col">
+                            <div class="form-floating-group">
+                                <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                                <input type="text" id="name" name="from_name" required placeholder="e.g. Sarah Jenkins">
+                            </div>
+                            <div class="form-floating-group">
+                                <label for="email"><i class="fas fa-at"></i> Email Address</label>
+                                <input type="email" id="email" name="from_email" required placeholder="e.g. sarah@company.com">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required
-                                placeholder="Hello Shayan, I'd like to connect regarding..."></textarea>
+
+                        <div class="form-floating-group mt-3">
+                            <label for="message"><i class="fas fa-comment-dots"></i> Message / Inquiry</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Hello Shayan, I'd like to connect regarding a Data Science role..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary submit-btn"><i class="fas fa-paper-plane"></i> Send
-                            Message</button>
+
+                        <button type="submit" class="btn btn-primary submit-btn btn-portal-submit mt-3">
+                            <i class="fas fa-paper-plane"></i> Send Direct Message
+                        </button>
                     </form>
                 </div>
+
             </div>
         </div>
     </section>
@@ -1173,16 +1203,29 @@
     <!-- Footer -->
     <footer>
         <div class="container footer-content">
-            <div class="footer-social">
-                <a href="https://github.com/shayan-codes-405" target="_blank" aria-label="GitHub"><i
-                        class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/shayan-akhtar-492456393" target="_blank" aria-label="LinkedIn"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="mailto:shayanakhtar405@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <div class="footer-brand">
+                <a href="#hero" class="footer-logo">Shayan<span class="highlight">.Akhtar</span></a>
+                <p class="footer-role">Data Scientist & Machine Learning Engineer</p>
             </div>
-            <p class="footer-tagline">"Built with passion, performance & precision"</p>
-            <p class="footer-bottom">Turning ideas into real-world applications</p>
-            <p class="copyright">&copy; 2026 Shayan Akhtar. All rights reserved.</p>
+
+            <div class="footer-nav">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#resume">CV</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://github.com/shayan-codes-405" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shayan-akhtar-492456393" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:shayanakhtar405@gmail.com" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <p class="footer-tagline">"Transforming Complex Data into Actionable Machine Learning Intelligence"</p>
+            <p class="copyright">&copy; 2026 Shayan Akhtar. Engineered with Precision & Performance.</p>
         </div>
     </footer>
 
