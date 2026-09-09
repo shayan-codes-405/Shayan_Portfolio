@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shayan Akhtar | Software Developer & Data Analyst Portfolio</title>
-    <meta name="description" content="Portfolio of Shayan Akhtar - Aspiring Software Developer & Data Analyst proficient in C++, Java, Python, Web Development, and Data Analytics.">
-    <meta name="keywords" content="Shayan Akhtar, Portfolio, Software Developer, Data Analyst, Java, Python, C++, Power BI, React, Web Developer">
+    <title>Shayan Akhtar | Data Scientist & Data Analytics Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Shayan Akhtar - Data Scientist & Data Analytics Specialist proficient in Python, Machine Learning, Data Analytics, Power BI, SQL, Streamlit, and Predictive Modeling.">
+    <meta name="keywords"
+        content="Shayan Akhtar, Portfolio, Data Scientist, Data Analyst, Machine Learning, Data Science, Python, Power BI, Streamlit, SQL">
     <meta name="author" content="Shayan Akhtar">
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Shayan Akhtar | Portfolio">
-    <meta property="og:description" content="I solve real-world problems using data & code. Explore my software development and data analytics projects.">
+    <meta property="og:title" content="Shayan Akhtar | Data Science & Analytics Portfolio">
+    <meta property="og:description"
+        content="Solving complex real-world problems using data science, machine learning, and business analytics. Explore my projects.">
     <meta property="og:image" content="Profile_pic.png">
     <meta property="og:type" content="website">
     <!-- Google Fonts: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Devicon -->
@@ -22,6 +29,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Scroll Progress Bar -->
@@ -30,7 +38,7 @@
     <!-- Loading Screen -->
     <div id="loader">
         <div class="loader-content">
-            <h1 class="loader-text">MyPortfolio</h1>
+            <h1 class="loader-text">Shayan Akhtar</h1>
             <div class="progress-bar-container">
                 <div class="progress-bar"></div>
             </div>
@@ -40,11 +48,12 @@
     <!-- Navbar -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">Shayan Akhtar</a>
-            <div class="nav-controls" style="display: flex; align-items: center; gap: 1rem;">
-                <div class="hamburger">
-                    <i class="fas fa-bars"></i>
-                </div>
+            <a href="#home" class="logo">
+                <span class="logo-dot"></span>
+                Shayan Akhtar
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
@@ -52,92 +61,135 @@
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero section-padding">
+    <section id="home" class="hero">
         <canvas id="hero-particles"></canvas>
         <div class="hero-container">
             <div class="hero-left fade-in">
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    Available for Full-time Roles & Internships
+                </div>
                 <h1>Hi, I'm <span class="highlight">Shayan Akhtar</span></h1>
                 <h2><span id="typewriter"></span><span class="typewriter-cursor">|</span></h2>
-                <p class="tagline">"I solve real-world problems using data & code"</p>
-                <p class="subtitle" style="font-weight: 500; color: var(--text-secondary); margin-bottom: 2rem;">B.Tech Computer Science Student | Backend & Data Analytics</p>
-                
+                <p class="tagline">"Transforming raw data & complex challenges into robust digital solutions"</p>
+                <p class="subtitle">B.Tech Computer Science Engineering Student at Lovely Professional University.
+                    Passionate about Data Science, Machine Learning pipelines, and Data Analytics.</p>
+
                 <div class="social-icons">
-                    <a href="https://github.com/shayan-codes-405" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/shayan-akhtar-492456393" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/shayan-codes-405" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shayan-akhtar-492456393" target="_blank"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     <a href="mailto:shayanakhtar405@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
-                
+
                 <div class="hero-buttons">
-                    <a href="/Shayan CV.pdf" class="btn btn-primary" download>Download Resume</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    <a href="Shayan CV.pdf" class="btn btn-primary" download><i class="fas fa-download"></i> Download
+                        Resume</a>
+                    <a href="#projects" class="btn btn-outline"><i class="fas fa-layer-group"></i> Explore Projects</a>
                 </div>
             </div>
             <div class="hero-right fade-in">
                 <div class="profile-img-container">
                     <div class="glow-effect"></div>
                     <div class="profile-blob" aria-label="Profile Image">
-                        <img src="/Profile_pic.png" alt="Shayan Akhtar" class="profile-img">
+                        <img src="Profile_pic.png" alt="Shayan Akhtar" class="profile-img">
                     </div>
                 </div>
             </div>
         </div>
-        <a href="#projects" class="scroll-down">
-            <span>Explore My Work ↓</span>
+        <a href="#about" class="scroll-down">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
         </a>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about section-padding">
         <div class="container fade-in">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <p class="section-subtitle">A brief overview of my background, core engineering values, and analytical
+                    mindset.</p>
+            </div>
+
             <div class="about-grid">
-                
-                <!-- Left Column -->
+                <!-- Left Column: Metrics & Facts -->
                 <div class="about-left">
+                    <div class="metrics-container">
+                        <div class="metric-card glass-card">
+                            <div class="metric-number">6+</div>
+                            <div class="metric-label">Projects Built</div>
+                        </div>
+                        <div class="metric-card glass-card">
+                            <div class="metric-number">6</div>
+                            <div class="metric-label">Certifications</div>
+                        </div>
+                        <div class="metric-card glass-card">
+                            <div class="metric-number">7.41</div>
+                            <div class="metric-label">B.Tech CGPA</div>
+                        </div>
+                        <div class="metric-card glass-card">
+                            <div class="metric-number">2027</div>
+                            <div class="metric-label">Graduation</div>
+                        </div>
+                    </div>
+
                     <div class="about-card glass-card">
-                        <h3 class="card-title">Quick Facts</h3>
+                        <h3 class="card-title"><i class="fas fa-user-check"></i> Quick Info</h3>
                         <div class="fact-item">
-                            <div class="fact-icon" style="color: #ef4444;"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="fact-icon" style="color: var(--accent-rose);"><i
+                                    class="fas fa-map-marker-alt"></i></div>
                             <div class="fact-text">
                                 <span class="fact-label">Location</span>
-                                <span class="fact-value">Asansol, West Bengal</span>
+                                <span class="fact-value">Asansol, West Bengal, India</span>
                             </div>
                         </div>
                         <div class="fact-item">
-                            <div class="fact-icon" style="color: #3b82f6;"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="fact-icon" style="color: var(--accent-cyan);"><i
+                                    class="fas fa-graduation-cap"></i></div>
                             <div class="fact-text">
                                 <span class="fact-label">Education</span>
-                                <span class="fact-value">Pursuing B.Tech in CSE</span>
+                                <span class="fact-value">B.Tech in CSE (LPU)</span>
                             </div>
                         </div>
                         <div class="fact-item">
-                            <div class="fact-icon" style="color: #f59e0b;"><i class="fas fa-briefcase"></i></div>
+                            <div class="fact-icon" style="color: var(--accent-amber);"><i
+                                    class="fas fa-code-branch"></i></div>
                             <div class="fact-text">
-                                <span class="fact-label">Experience</span>
-                                <span class="fact-value">Fresher</span>
+                                <span class="fact-label">Focus Areas</span>
+                                <span class="fact-value">Data Science & Analytics</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Right Column -->
-                <div class="about-right">
-                    <div class="about-card glass-card mb-2">
-                        <h3 class="card-title" style="color: var(--accent-glow);">My Journey</h3>
-                        <p class="about-desc">Hello! I'm <span class="highlight">Shayan Akhtar</span>, a passionate <span class="highlight">B.Tech Computer Science Engineering</span> student with a deep fascination for transforming complex problems into elegant digital solutions.<br><br>My journey in tech began with curious exploration and has evolved into a focused expertise in software development. I thrive at the intersection of <span class="highlight">robust backend development</span>, scalable web technologies, and <span class="highlight">data-driven insights</span>.</p>
-                    </div>
-                    <div class="about-card glass-card">
-                        <h3 class="card-title" style="color: var(--accent-glow);">My Approach</h3>
-                        <p class="about-desc">I believe in creating technology that's not just functional but elegant. Every line of code I write aims to solve real problems and enhance user experiences. I value clean architecture, collaborative development, and continuous learning as the foundations of great software. By combining cutting-edge tools with a strong mindset, I aim to turn ambitious ideas into reality through <span class="highlight">clean code</span>.</p>
                     </div>
                 </div>
 
+                <!-- Right Column: Narrative -->
+                <div class="about-right">
+                    <div class="about-card glass-card mb-2">
+                        <h3 class="card-title"><i class="fas fa-rocket"></i> My Tech Journey</h3>
+                        <p class="about-desc">Hello! I'm <span class="highlight">Shayan Akhtar</span>, a Computer
+                            Science Engineering undergraduate passionate about solving complex real-world problems with
+                            Data Science, Machine Learning, and data-driven insights.<br><br>My expertise lies in
+                            building machine learning prediction models, exploratory data analysis, and constructing
+                            business intelligence dashboards. I enjoy bridging the gap between raw data and actionable
+                            business decisions.</p>
+                    </div>
+                    <div class="about-card glass-card">
+                        <h3 class="card-title"><i class="fas fa-bullseye"></i> Problem-Solving Philosophy</h3>
+                        <p class="about-desc">I prioritize <span class="highlight">clean architecture</span>, optimized
+                            queries, and responsive interfaces. Whether training classification algorithms in Python,
+                            engineering desktop applications in Java, or modeling financial data in Power BI, I aim for
+                            precision, performance, and user efficiency.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -145,410 +197,414 @@
     <!-- Skills Section -->
     <section id="skills" class="skills section-padding">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
-            
-            <div class="projects-flex">
-                <!-- Skill 1: Languages -->
-                <div class="project-card glass-card fade-in">
-                    <div class="project-img-placeholder" style="background: linear-gradient(to bottom right, rgba(239, 68, 68, 0.1), transparent); color: #ef4444;">
-                        <i class="fas fa-code"></i>
+            <div class="section-header">
+                <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+                <p class="section-subtitle">Core languages, frameworks, data libraries, and tools I use to build
+                    intelligent applications.</p>
+            </div>
+
+            <!-- Group 1: Data Science & ML Libraries -->
+            <div class="skills-group fade-in">
+                <h3 class="skills-group-title"><i class="fas fa-brain"></i> Data Science & Machine Learning</h3>
+                <div class="skills-grid-wrapper">
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="devicon-python-plain colored"></i></div>
+                        <div class="skill-tile-name">Python</div>
+                        <span class="skill-tile-badge">Core Data Language</span>
                     </div>
-                    <div class="project-info">
-                        <h3>Languages</h3>
-                        <p class="project-desc">Core programming languages for application logic, object-oriented software, and web development.</p>
-                        <div class="tech-stack">
-                            <span>Java</span>
-                            <span>Python</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                        </div>
-                        <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-skill-1">Read More</button>
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="devicon-pandas-original colored"></i></div>
+                        <div class="skill-tile-name">Pandas</div>
+                        <span class="skill-tile-badge">Data Processing</span>
+                    </div>
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="devicon-numpy-original colored"></i></div>
+                        <div class="skill-tile-name">NumPy</div>
+                        <span class="skill-tile-badge">Vector Computing</span>
+                    </div>
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="devicon-scikitlearn-line colored"></i></div>
+                        <div class="skill-tile-name">Scikit-Learn</div>
+                        <span class="skill-tile-badge">ML Models</span>
+                    </div>
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="fas fa-chart-line" style="color: #38bdf8;"></i></div>
+                        <div class="skill-tile-name">Matplotlib</div>
+                        <span class="skill-tile-badge">Data Visualization</span>
+                    </div>
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="fas fa-chart-area" style="color: #818cf8;"></i></div>
+                        <div class="skill-tile-name">Seaborn</div>
+                        <span class="skill-tile-badge">Statistical Plots</span>
+                    </div>
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="fas fa-laptop-code" style="color: #ff4b4b;"></i></div>
+                        <div class="skill-tile-name">Streamlit</div>
+                        <span class="skill-tile-badge">ML Deployment</span>
                     </div>
                 </div>
+            </div>
 
-                <!-- Skill 2: Libraries -->
-                <div class="project-card glass-card fade-in">
-                    <div class="project-img-placeholder" style="background: linear-gradient(to bottom right, rgba(249, 115, 22, 0.1), transparent); color: #f97316;">
-                        <i class="fas fa-chart-bar"></i>
+            <!-- Group 2: Data Analytics & BI Platforms -->
+            <div class="skills-group fade-in">
+                <h3 class="skills-group-title"><i class="fas fa-chart-pie"></i> Data Analytics & BI Platforms</h3>
+                <div class="skills-grid-wrapper">
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="fas fa-chart-bar" style="color: #f2c811;"></i></div>
+                        <div class="skill-tile-name">Power BI</div>
+                        <span class="skill-tile-badge">BI Dashboards</span>
                     </div>
-                    <div class="project-info">
-                        <h3>Libraries</h3>
-                        <p class="project-desc">Data analysis, machine learning model building, statistical visualization, and numerical computation.</p>
-                        <div class="tech-stack">
-                            <span>Pandas</span>
-                            <span>Seaborn</span>
-                            <span>Matplotlib</span>
-                            <span>Scikit-learn</span>
-                            <span>NumPy</span>
-                        </div>
-                        <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-skill-2">Read More</button>
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="fas fa-file-excel" style="color: #107c41;"></i></div>
+                        <div class="skill-tile-name">MS Excel</div>
+                        <span class="skill-tile-badge">Advanced Analytics</span>
+                    </div>
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="devicon-jupyter-plain colored"></i></div>
+                        <div class="skill-tile-name">Jupyter</div>
+                        <span class="skill-tile-badge">EDA Environment</span>
+                    </div>
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="devicon-mysql-plain colored"></i></div>
+                        <div class="skill-tile-name">MySQL</div>
+                        <span class="skill-tile-badge">Relational SQL</span>
+                    </div>
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="fas fa-filter" style="color: #06b6d4;"></i></div>
+                        <div class="skill-tile-name">Power Query & DAX</div>
+                        <span class="skill-tile-badge">ETL & Data Modeling</span>
                     </div>
                 </div>
+            </div>
 
-                <!-- Skill 3: Databases -->
-                <div class="project-card glass-card fade-in">
-                    <div class="project-img-placeholder" style="background: linear-gradient(to bottom right, rgba(236, 72, 153, 0.1), transparent); color: #ec4899;">
-                        <i class="fas fa-database"></i>
+            <!-- Group 3: Core Programming Languages -->
+            <div class="skills-group fade-in">
+                <h3 class="skills-group-title"><i class="fas fa-code"></i> Core Programming Languages</h3>
+                <div class="skills-grid-wrapper">
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="devicon-java-plain colored"></i></div>
+                        <div class="skill-tile-name">Java</div>
+                        <span class="skill-tile-badge">OOP & Software</span>
                     </div>
-                    <div class="project-info">
-                        <h3>Databases</h3>
-                        <p class="project-desc">Relational data modeling, structured query design, data integrity, and persistent storage management.</p>
-                        <div class="tech-stack">
-                            <span>MySQL</span>
-                        </div>
-                        <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-skill-3">Read More</button>
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="devicon-cplusplus-plain colored"></i></div>
+                        <div class="skill-tile-name">C++</div>
+                        <span class="skill-tile-badge">Logic & DSA</span>
+                    </div>
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="devicon-html5-plain colored"></i></div>
+                        <div class="skill-tile-name">HTML5</div>
+                        <span class="skill-tile-badge">Web Structure</span>
+                    </div>
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="devicon-css3-plain colored"></i></div>
+                        <div class="skill-tile-name">CSS3</div>
+                        <span class="skill-tile-badge">Responsive Styling</span>
                     </div>
                 </div>
+            </div>
 
-                <!-- Skill 4: Tools & Platforms -->
-                <div class="project-card glass-card fade-in">
-                    <div class="project-img-placeholder" style="background: linear-gradient(to bottom right, rgba(168, 85, 247, 0.1), transparent); color: #a855f7;">
-                        <i class="fas fa-tools"></i>
+            <!-- Group 4: Developer Tools & Platforms -->
+            <div class="skills-group fade-in">
+                <h3 class="skills-group-title"><i class="fas fa-tools"></i> Developer Tools & Workflows</h3>
+                <div class="skills-grid-wrapper">
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="devicon-git-plain colored"></i></div>
+                        <div class="skill-tile-name">Git</div>
+                        <span class="skill-tile-badge">Version Control</span>
                     </div>
-                    <div class="project-info">
-                        <h3>Tools & Platforms</h3>
-                        <p class="project-desc">Version control, IDE environments, business intelligence dashboards, and spreadsheet data modeling.</p>
-                        <div class="tech-stack">
-                            <span>Git</span>
-                            <span>GitHub</span>
-                            <span>VS Code</span>
-                            <span>IntelliJ IDEA</span>
-                            <span>Excel</span>
-                            <span>Power BI</span>
-                        </div>
-                        <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-skill-4">Read More</button>
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="devicon-github-original colored"></i></div>
+                        <div class="skill-tile-name">GitHub</div>
+                        <span class="skill-tile-badge">Code Repositories</span>
+                    </div>
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="devicon-vscode-plain colored"></i></div>
+                        <div class="skill-tile-name">VS Code</div>
+                        <span class="skill-tile-badge">Primary IDE</span>
+                    </div>
+                    <div class="skill-tile">
+                        <div class="skill-tile-icon"><i class="devicon-intellij-plain colored"></i></div>
+                        <div class="skill-tile-name">IntelliJ IDEA</div>
+                        <span class="skill-tile-badge">Java IDE</span>
                     </div>
                 </div>
-
-                <!-- Skill 5: Soft Skills -->
-                <div class="project-card glass-card fade-in">
-                    <div class="project-img-placeholder" style="background: linear-gradient(to bottom right, rgba(16, 185, 129, 0.1), transparent); color: #10b981;">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>Soft Skills</h3>
-                        <p class="project-desc">Key analytical and interpersonal competencies for productive, high-impact technical collaboration.</p>
-                        <div class="tech-stack">
-                            <span>Problem-Solving</span>
-                            <span>Team Collaboration</span>
-                            <span>Time Management</span>
-                            <span>Adaptability</span>
-                        </div>
-                        <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-skill-5">Read More</button>
-                    </div>
-                </div>
-
             </div>
 
         </div>
     </section>
 
-    <!-- Skill Modals -->
-    <!-- Modal Skill 1: Languages -->
-    <div class="modal" id="modal-skill-1">
-        <div class="modal-content glass-card">
-            <span class="close-modal">&times;</span>
-            <div class="modal-banner" style="color: #ef4444;">
-                <i class="fas fa-code"></i>
-            </div>
-            <h2 class="modal-title">Languages</h2>
-            <div class="tech-stack modal-tags">
-                <span>Java</span>
-                <span>Python</span>
-                <span>HTML</span>
-                <span>CSS</span>
-            </div>
-            <p class="modal-desc">
-                Core programming languages utilized for algorithm design, object-oriented software engineering, data analysis, and web front-end structure.
-            </p>
-            <ul class="modal-highlights">
-                <li>Object-Oriented Programming (OOP) in Java and Python.</li>
-                <li>Clean algorithm development, data structure optimization, and logic building.</li>
-                <li>Responsive Web design structures using Semantic HTML and CSS styling.</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Modal Skill 2: Libraries -->
-    <div class="modal" id="modal-skill-2">
-        <div class="modal-content glass-card">
-            <span class="close-modal">&times;</span>
-            <div class="modal-banner" style="color: #f97316;">
-                <i class="fas fa-chart-bar"></i>
-            </div>
-            <h2 class="modal-title">Libraries</h2>
-            <div class="tech-stack modal-tags">
-                <span>Pandas</span>
-                <span>Seaborn</span>
-                <span>Matplotlib</span>
-                <span>Scikit-learn</span>
-                <span>NumPy</span>
-            </div>
-            <p class="modal-desc">
-                Data science, exploratory analysis, numerical processing, machine learning model building, and statistical data visualization.
-            </p>
-            <ul class="modal-highlights">
-                <li>Data cleaning, data preprocessing, and feature engineering with Pandas & NumPy.</li>
-                <li>Supervised machine learning classification models with Scikit-learn.</li>
-                <li>Statistical chart creation and insight visualization using Matplotlib & Seaborn.</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Modal Skill 3: Databases -->
-    <div class="modal" id="modal-skill-3">
-        <div class="modal-content glass-card">
-            <span class="close-modal">&times;</span>
-            <div class="modal-banner" style="color: #ec4899;">
-                <i class="fas fa-database"></i>
-            </div>
-            <h2 class="modal-title">Databases</h2>
-            <div class="tech-stack modal-tags">
-                <span>MySQL</span>
-            </div>
-            <p class="modal-desc">
-                Designing robust relational database schemas, optimizing SQL queries, and ensuring seamless data persistence for software applications.
-            </p>
-            <ul class="modal-highlights">
-                <li>Relational database schema design and normalization.</li>
-                <li>SQL query formulation and data retrieval optimization.</li>
-                <li>Database connection integration with Java (JDBC) and backend services.</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Modal Skill 4: Tools & Platforms -->
-    <div class="modal" id="modal-skill-4">
-        <div class="modal-content glass-card">
-            <span class="close-modal">&times;</span>
-            <div class="modal-banner" style="color: #a855f7;">
-                <i class="fas fa-tools"></i>
-            </div>
-            <h2 class="modal-title">Tools & Platforms</h2>
-            <div class="tech-stack modal-tags">
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>Visual Studio Code</span>
-                <span>IntelliJ IDEA</span>
-                <span>Microsoft Excel</span>
-                <span>Power BI</span>
-            </div>
-            <p class="modal-desc">
-                Development environments, version control systems, business intelligence platforms, and advanced analytics spreadsheet tools.
-            </p>
-            <ul class="modal-highlights">
-                <li>Git version control and GitHub code repository management.</li>
-                <li>Enterprise-level data visualization dashboard design in Power BI using DAX & Power Query.</li>
-                <li>Productivity & IDE development using IntelliJ IDEA and VS Code.</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Modal Skill 5: Soft Skills -->
-    <div class="modal" id="modal-skill-5">
-        <div class="modal-content glass-card">
-            <span class="close-modal">&times;</span>
-            <div class="modal-banner" style="color: #10b981;">
-                <i class="fas fa-users"></i>
-            </div>
-            <h2 class="modal-title">Soft Skills</h2>
-            <div class="tech-stack modal-tags">
-                <span>Problem-Solving</span>
-                <span>Team Collaboration</span>
-                <span>Time Management</span>
-                <span>Adaptability</span>
-            </div>
-            <p class="modal-desc">
-                Essential professional skills that foster efficient teamwork, proactive problem solving, and effective delivery on complex projects.
-            </p>
-            <ul class="modal-highlights">
-                <li>Analytical problem solving and logical bug diagnosis.</li>
-                <li>Effective collaboration across cross-functional student teams and community initiatives.</li>
-                <li>Agile time management and quick adaptability to new technologies.</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Projects Section -->
+    <!-- ==========================================================================
+       Projects Section (SOPHISTICATED REDESIGN)
+       ========================================================================== -->
     <section id="projects" class="projects section-padding">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
-            
-            <!-- Project Filter Controls -->
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="data"><i class="fas fa-chart-pie"></i> Data Analytics</button>
-                <button class="filter-btn" data-filter="web"><i class="fas fa-laptop-code"></i> Web Dev</button>
-                <button class="filter-btn" data-filter="java"><i class="fas fa-code"></i> Java & Desktop</button>
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <p class="section-subtitle">Engineered solutions spanning Machine Learning, Interactive Data
+                    Intelligence Dashboards, Java Applications, and Web Engineering.</p>
             </div>
 
+            <!-- Category Filter Tabs -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th-large"></i> All Projects <span class="filter-badge">6</span>
+                </button>
+                <button class="filter-btn" data-filter="data">
+                    <i class="fas fa-chart-pie"></i> Data & Machine Learning <span class="filter-badge">4</span>
+                </button>
+                <button class="filter-btn" data-filter="java">
+                    <i class="fas fa-coffee"></i> Java & Desktop <span class="filter-badge">1</span>
+                </button>
+                <button class="filter-btn" data-filter="web">
+                    <i class="fas fa-laptop-code"></i> Web Dev <span class="filter-badge">1</span>
+                </button>
+            </div>
+
+            <!-- Projects Grid Container -->
             <div class="projects-flex">
-                
-                <!-- Telecom Customer Churn Prediction -->
-                <div class="project-card glass-card fade-in" data-category="data">
-                    <div class="project-card-img-wrapper">
-                        <img src="Telecom Churn.png" class="real-project-img" alt="Telecom Customer Churn Prediction">
+
+                <!-- FEATURED SPOTLIGHT CARD (Telecom Churn ML) -->
+                <div class="featured-project-card project-card fade-in" data-category="data">
+                    <div class="featured-badge"><i class="fas fa-star"></i> Featured Project</div>
+
+                    <div class="featured-img-wrapper" data-images="Telecom Churn.png, Telecom Churn 2.png">
+                        <img src="Telecom Churn.png" class="real-project-img"
+                            alt="Telecom Customer Churn Prediction Live Streamlit App">
+                        <div class="project-overlay">
+                            <button class="overlay-action-btn trigger-modal" data-modal="modal-project-churn"
+                                title="Quick View Details">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://churn-predictor-telecom-customer.streamlit.app/" target="_blank"
+                                class="overlay-action-btn" title="Launch Streamlit Live App">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="project-info">
+
+                    <div class="featured-info">
                         <h3>Telecom Customer Churn Prediction</h3>
-                        <p class="project-desc">Engineered an end-to-end machine learning solution to predict telecom customer churn using account information, service usage, and support history.</p>
+                        <p class="project-desc">Engineered an end-to-end Machine Learning model to predict customer
+                            churn using usage patterns, account contracts, and support tickets. Deployed via Streamlit
+                            with real-time risk scores and interactive feature importance charts.</p>
+
+                        <div class="featured-metrics-grid">
+                            <div class="metric-tag">
+                                <i class="fas fa-brain"></i>
+                                <span>Supervised Classification</span>
+                            </div>
+                            <div class="metric-tag">
+                                <i class="fas fa-rocket"></i>
+                                <span>Deployed on Streamlit Cloud</span>
+                            </div>
+                            <div class="metric-tag">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>EDA & Feature Importance</span>
+                            </div>
+                            <div class="metric-tag">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Retention Strategy Risk Scores</span>
+                            </div>
+                        </div>
+
                         <div class="tech-stack">
                             <span>Python</span>
                             <span>Scikit-learn</span>
                             <span>Streamlit</span>
                             <span>Pandas</span>
                             <span>NumPy</span>
+                            <span>Matplotlib</span>
                         </div>
+
                         <div class="project-buttons">
-                            <button class="btn btn-outline btn-sm trigger-modal" data-modal="modal-project-churn">Read More</button>
-                            <a href="https://churn-predictor-telecom-customer.streamlit.app/" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Live App</a>
+                            <a href="https://churn-predictor-telecom-customer.streamlit.app/" target="_blank"
+                                class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Launch Live
+                                App</a>
+                            <button class="btn btn-outline btn-sm trigger-modal" data-modal="modal-project-churn"><i
+                                    class="fas fa-file-alt"></i> Case Study</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 1 -->
+                <!-- Showcase Project 1: EasyInvoice Pro (Java) -->
                 <div class="project-card glass-card fade-in" data-category="java">
-                    <div class="project-card-img-wrapper">
-                        <img src="Java UI.png" class="real-project-img" alt="EasyInvoice Pro">
+                    <div class="project-card-img-wrapper" data-images="Java UI.png, Java Code.png, Java Flow.png">
+                        <span class="project-category-tag">Java Desktop</span>
+                        <img src="Java UI.png" class="real-project-img" alt="EasyInvoice Pro Billing Desktop App">
+                        <div class="project-overlay">
+                            <button class="overlay-action-btn trigger-modal" data-modal="modal-project-1"
+                                title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://github.com/shayan-codes-405/EasyInvoice-Pro.git" target="_blank"
+                                class="overlay-action-btn" title="View Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                     <div class="project-info">
                         <h3>EasyInvoice Pro</h3>
-                        <p class="project-desc">Smart Billing System featuring robust product management, tax calculations, and instant custom invoice generation.</p>
+                        <p class="project-desc">Smart desktop point-of-sale billing application featuring dynamic tax
+                            processing, product inventory subtraction, and instant printable custom invoice rendering.
+                        </p>
                         <div class="tech-stack">
                             <span>Java</span>
-                            <span>Swing</span>
+                            <span>Swing UI</span>
                             <span>MySQL</span>
+                            <span>JDBC</span>
                         </div>
                         <div class="project-buttons">
-                            <button class="btn btn-outline btn-sm trigger-modal" data-modal="modal-project-1">Read More</button>
-                            <a href="https://github.com/shayan-codes-405/EasyInvoice-Pro.git" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+                            <button class="btn btn-outline btn-sm trigger-modal" data-modal="modal-project-1"><i
+                                    class="fas fa-info-circle"></i> Details</button>
+                            <a href="https://github.com/shayan-codes-405/EasyInvoice-Pro.git" target="_blank"
+                                class="btn btn-glass btn-sm"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Showcase Project 2: FraudLens 360 (Power BI) -->
                 <div class="project-card glass-card fade-in" data-category="data">
-                    <div class="project-card-img-wrapper">
-                        <img src="FraudLens UI 1.png" class="real-project-img" alt="Transaction Fraud Intelligence Dashboard">
+                    <div class="project-card-img-wrapper"
+                        data-images="FraudLens UI 1.png, FraudLens UI 2.png, FraudLens Flow.png">
+                        <span class="project-category-tag">Data Analytics</span>
+                        <img src="FraudLens UI 1.png" class="real-project-img" alt="FraudLens 360 Power BI Dashboard">
+                        <div class="project-overlay">
+                            <button class="overlay-action-btn trigger-modal" data-modal="modal-project-2"
+                                title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://github.com/shayan-codes-405/FraudLens-360-Transaction-Fraud-Intelligence-Dashboard-.git"
+                                target="_blank" class="overlay-action-btn" title="View Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>FraudLens 360 - Transaction Fraud Intelligence Dashboard</h3>
-                        <p class="project-desc">A powerful data analysis dashboard designed to detect fraudulent and malicious behavior, with clear patterns and prevention alerts.</p>
+                        <h3>FraudLens 360 Dashboard</h3>
+                        <p class="project-desc">Advanced Power BI intelligence dashboard analyzing transactional
+                            behavior to spot anomalous financial fraud spikes, high-risk merchant categories, and
+                            regional risk metrics.</p>
                         <div class="tech-stack">
                             <span>Power BI</span>
+                            <span>DAX</span>
                             <span>Data Analysis</span>
+                            <span>Power Query</span>
                         </div>
                         <div class="project-buttons">
-                            <button class="btn btn-outline btn-sm trigger-modal" data-modal="modal-project-2">Read More</button>
-                            <a href="https://github.com/shayan-codes-405/FraudLens-360-Transaction-Fraud-Intelligence-Dashboard-.git" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+                            <button class="btn btn-outline btn-sm trigger-modal" data-modal="modal-project-2"><i
+                                    class="fas fa-info-circle"></i> Details</button>
+                            <a href="https://github.com/shayan-codes-405/FraudLens-360-Transaction-Fraud-Intelligence-Dashboard-.git"
+                                target="_blank" class="btn btn-glass btn-sm"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3 removed -->
-                
-                <!-- Project 4 -->
+                <!-- Showcase Project 3: Excel Transaction Fraud Intelligence -->
                 <div class="project-card glass-card fade-in" data-category="data">
-                    <div class="project-card-img-wrapper">
-                        <img src="excel 1.png" class="real-project-img" alt="FraudLens-360-Transaction-Fraud-Intelligence-Dashboard">
+                    <div class="project-card-img-wrapper" data-images="excel 1.png, excel 2.png, excel 3.png">
+                        <span class="project-category-tag">Excel Analytics</span>
+                        <img src="excel 1.png" class="real-project-img"
+                            alt="Excel Transaction Fraud Intelligence Dashboard">
+                        <div class="project-overlay">
+                            <button class="overlay-action-btn trigger-modal" data-modal="modal-project-4"
+                                title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://github.com/shayan-codes-405/Transaction-Fraud-Intelligence-Dashboard-.git"
+                                target="_blank" class="overlay-action-btn" title="View Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>Transaction Fraud Intelligence Dashboard</h3>
-                        <p class="project-desc">Interactive dashboard analyzing 20,000+ bank transactions to detect fraud patterns, regional trends, and merchant insights.</p>
+                        <h3>Transaction Fraud Excel BI</h3>
+                        <p class="project-desc">Interactive dashboard processing 20,000+ bank transactions using Excel
+                            Pivot Tables, conditional formatting, dynamic slicers, and device-based risk matrices.</p>
                         <div class="tech-stack">
-                            <span>Power BI</span>
-                            <span>Data Analysis</span>
+                            <span>MS Excel</span>
+                            <span>Pivot Tables</span>
+                            <span>Data Cleaning</span>
+                            <span>Slicers</span>
                         </div>
                         <div class="project-buttons">
-                            <button class="btn btn-outline btn-sm trigger-modal" data-modal="modal-project-4">Read More</button>
-                            <a href="https://github.com/shayan-codes-405/Transaction-Fraud-Intelligence-Dashboard-.git" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+                            <button class="btn btn-outline btn-sm trigger-modal" data-modal="modal-project-4"><i
+                                    class="fas fa-info-circle"></i> Details</button>
+                            <a href="https://github.com/shayan-codes-405/Transaction-Fraud-Intelligence-Dashboard-.git"
+                                target="_blank" class="btn btn-glass btn-sm"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 5 -->
+                <!-- Showcase Project 4: Bank Transaction Data Analysis (Python) -->
                 <div class="project-card glass-card fade-in" data-category="data">
-                    <div class="project-card-img-wrapper">
-                        <img src="bank 1.png" class="real-project-img" alt="Bank Transaction Data Analysis Using Python">
+                    <div class="project-card-img-wrapper" data-images="bank 1.png, bank 2.png, bank 3.png">
+                        <span class="project-category-tag">Python Analytics</span>
+                        <img src="bank 1.png" class="real-project-img"
+                            alt="Bank Transaction Data Analysis Using Python">
+                        <div class="project-overlay">
+                            <button class="overlay-action-btn trigger-modal" data-modal="modal-project-5"
+                                title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://github.com/shayan-codes-405/Bank-Transaction-Data-Analysis-Using-Python.git"
+                                target="_blank" class="overlay-action-btn" title="View Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>Bank Transaction Data Analysis Using Python</h3>
-                        <p class="project-desc">Comprehensive Python analysis of bank transactions using Pandas, NumPy, Matplotlib, and Seaborn for data cleaning, visualization, and anomaly detection.</p>
+                        <h3>Bank Transaction Python EDA</h3>
+                        <p class="project-desc">Exploratory data analysis pipeline engineered in Python using Pandas &
+                            Seaborn to evaluate customer spending habits, time-series income trends, and transaction
+                            anomalies.</p>
                         <div class="tech-stack">
                             <span>Python</span>
                             <span>Pandas</span>
                             <span>NumPy</span>
-                            <span>Matplotlib</span>
                             <span>Seaborn</span>
+                            <span>Matplotlib</span>
                         </div>
                         <div class="project-buttons">
-                            <button class="btn btn-outline btn-sm trigger-modal" data-modal="modal-project-5">Read More</button>
-                            <a href="https://github.com/shayan-codes-405/Bank-Transaction-Data-Analysis-Using-Python.git" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+                            <button class="btn btn-outline btn-sm trigger-modal" data-modal="modal-project-5"><i
+                                    class="fas fa-info-circle"></i> Details</button>
+                            <a href="https://github.com/shayan-codes-405/Bank-Transaction-Data-Analysis-Using-Python.git"
+                                target="_blank" class="btn btn-glass btn-sm"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Project 6 -->
+
+                <!-- Showcase Project 5: ECOGROW Website -->
                 <div class="project-card glass-card fade-in" data-category="web">
-                    <div class="project-card-img-wrapper">
-                        <img src="EcoGrow 1.png" class="real-project-img" alt="ECOGROW Website">
+                    <div class="project-card-img-wrapper" data-images="EcoGrow 1.png, EcoGrow 2.png, EcoGrow 3.png">
+                        <span class="project-category-tag">Web Development</span>
+                        <img src="EcoGrow 1.png" class="real-project-img" alt="ECOGROW Web Portal">
+                        <div class="project-overlay">
+                            <button class="overlay-action-btn trigger-modal" data-modal="modal-project-6"
+                                title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://github.com/shayan-codes-405/ECOGROW.git" target="_blank"
+                                class="overlay-action-btn" title="View Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>ECOGROW Website</h3>
-                        <p class="project-desc">A digital green platform dedicated to environmental awareness, boasting an integrated community donation system.</p>
+                        <h3>ECOGROW Platform</h3>
+                        <p class="project-desc">Environmental stewardship digital web application featuring community
+                            green events tracking, client-side interactive forms, and integrated donation workflows.</p>
                         <div class="tech-stack">
-                            <span>HTML/CSS</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
                             <span>JavaScript</span>
+                            <span>Responsive Web</span>
                         </div>
                         <div class="project-buttons">
-                            <button class="btn btn-outline btn-sm trigger-modal" data-modal="modal-project-6">Read More</button>
-                            <a href="https://github.com/shayan-codes-405/ECOGROW.git" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education section-padding">
-        <div class="container fade-in">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                
-                <!-- Degree 1 -->
-                <div class="timeline-item glass-card fade-in">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-degree">B.Tech CSE</h3>
-                        <h4 class="timeline-institute">Lovely Professional University (LPU)</h4>
-                        <div class="timeline-footer">
-                            <span class="timeline-marks">CGPA: 7.41</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Degree 2 -->
-                <div class="timeline-item glass-card fade-in">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-degree">Intermediate</h3>
-                        <h4 class="timeline-institute">Narayana School</h4>
-                        <div class="timeline-footer">
-                            <span class="timeline-marks">65.4%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Degree 3 -->
-                <div class="timeline-item glass-card fade-in">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-degree">Matriculation</h3>
-                        <h4 class="timeline-institute">Narayana</h4>
-                        <div class="timeline-footer">
-                            <span class="timeline-marks">92%</span>
+                            <button class="btn btn-outline btn-sm trigger-modal" data-modal="modal-project-6"><i
+                                    class="fas fa-info-circle"></i> Details</button>
+                            <a href="https://github.com/shayan-codes-405/ECOGROW.git" target="_blank"
+                                class="btn btn-glass btn-sm"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -560,435 +616,501 @@
     <!-- Project Modals -->
     <!-- Modal Telecom Customer Churn Prediction -->
     <div class="modal" id="modal-project-churn">
-        <div class="modal-content glass-card">
+        <div class="modal-content">
             <span class="close-modal">&times;</span>
-            
-            <div class="modal-gallery mt-1">
+            <div class="modal-gallery">
                 <img src="Telecom Churn.png" alt="Telecom Churn Dashboard Slide 1">
                 <img src="Telecom Churn 2.png" alt="Telecom Churn Model Analytics Slide 2">
             </div>
-
             <h2 class="modal-title">Telecom Customer Churn Prediction</h2>
             <div class="tech-stack modal-tags">
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>NumPy</span>
-                <span>Matplotlib</span>
-                <span>Seaborn</span>
-                <span>Scikit-learn</span>
-                <span>Streamlit</span>
+                <span>Python</span><span>Scikit-learn</span><span>Streamlit</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
             </div>
-            <p class="modal-desc">
-                Engineered an end-to-end machine learning solution to predict telecom customer churn using customer account information, service usage patterns, and support history, enabling proactive customer retention strategies.
+            <p class="modal-desc">Engineered an end-to-end Machine Learning pipeline to analyze customer demographics,
+                payment behavior, contract lengths, and tech support usage to accurately forecast customer churn risk.
             </p>
             <ul class="modal-highlights">
-                <li>Engineered an end-to-end machine learning solution to predict telecom customer churn using customer account information, service usage patterns, and support history, enabling proactive customer retention strategies.</li>
-                <li>Performed exploratory data analysis (EDA), feature engineering, data preprocessing, model training, and performance evaluation to identify key factors influencing customer churn.</li>
-                <li>Deployed an interactive Streamlit web application that delivers real-time churn predictions, probability scores, risk categorization, feature importance visualization, and downloadable prediction reports.</li>
+                <li>Performed comprehensive exploratory data analysis (EDA), feature engineering, and categorical
+                    encoding.</li>
+                <li>Trained supervised classification models (Random Forest / Logistic Regression) to compute retention
+                    probability scores.</li>
+                <li>Deployed an interactive Streamlit web dashboard featuring real-time risk classification, model
+                    confidence meters, and downloadable diagnostic reports.</li>
             </ul>
             <div class="modal-footer">
-                <a href="https://churn-predictor-telecom-customer.streamlit.app/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Launch Live Streamlit App</a>
+                <a href="https://churn-predictor-telecom-customer.streamlit.app/" target="_blank"
+                    class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Launch Live Streamlit App</a>
             </div>
         </div>
     </div>
 
-    <!-- Modal 1 -->
+    <!-- Modal EasyInvoice Pro -->
     <div class="modal" id="modal-project-1">
-        <div class="modal-content glass-card">
+        <div class="modal-content">
             <span class="close-modal">&times;</span>
-            
-            <div class="modal-gallery mt-1">
+            <div class="modal-gallery">
                 <img src="Java UI.png" alt="Slide 1">
                 <img src="Java Code.png" alt="Slide 2">
                 <img src="Java Flow.png" alt="Slide 3">
             </div>
-
             <h2 class="modal-title">EasyInvoice Pro</h2>
             <div class="tech-stack modal-tags">
-                <span>Java</span>
-                <span>Swing</span>
-                <span>MySQL</span>
+                <span>Java</span><span>Swing</span><span>MySQL</span><span>JDBC</span>
             </div>
-            <p class="modal-desc">
-                EasyInvoice Pro is an industry-grade desktop billing application engineered to streamline point-of-sale activities. It blends a robust backend with an intuitive Java Swing UI.
-            </p>
+            <p class="modal-desc">EasyInvoice Pro is an industry-grade desktop billing application engineered to
+                streamline point-of-sale activities and invoice generation for retail businesses.</p>
             <ul class="modal-highlights">
-                <li>Automated tax percentage and discount mapping.</li>
-                <li>Dynamic multi-format printable invoice generation.</li>
-                <li>Real-time inventory subtraction and metric tracking.</li>
-                <li>Highly secure and normalized MySQL database integration.</li>
+                <li>Automated tax percentage, item discount mappings, and real-time total updates.</li>
+                <li>Dynamic printable invoice generation with customizable company branding.</li>
+                <li>Automated stock subtraction upon invoice confirmation.</li>
+                <li>Normalized MySQL database integration with secure JDBC query execution.</li>
             </ul>
             <div class="modal-footer">
-                <a href="https://github.com/shayan-codes-405/EasyInvoice-Pro.git" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> View GitHub</a>
+                <a href="https://github.com/shayan-codes-405/EasyInvoice-Pro.git" target="_blank"
+                    class="btn btn-primary"><i class="fab fa-github"></i> View GitHub Repository</a>
             </div>
         </div>
     </div>
 
-    <!-- Modal 4 -->
-    <div class="modal" id="modal-project-4">
-        <div class="modal-content glass-card">
-            <span class="close-modal">&times;</span>
-            <div class="modal-gallery mt-1">
-                <img src="excel 1.png" alt="Slide 1">
-                <img src="excel 2.png" alt="Slide 2">
-                <img src="excel 3.png" alt="Slide 3">
-            </div>
-            <h2 class="modal-title">Transaction Fraud Intelligence Dashboard</h2>
-            <div class="tech-stack modal-tags">
-                <span>Excel</span>
-                <span>Data Analysis</span>
-            </div>
-            <p class="modal-desc">
-                Transaction Fraud Intelligence Dashboard is a comprehensive Excel-based dashboard that transforms raw financial data into actionable fraud intelligence. Built with Microsoft Excel's advanced analytics tools, this dashboard processes over 20,000 real-world bank transactions to uncover sophisticated fraud patterns and trends.
-            </p>
-            <ul class="modal-highlights">
-                <li>Advanced data cleaning and preprocessing using Excel formulas and Power Query</li>
-                <li>Interactive Pivot Tables and Charts for transaction type analysis</li>
-                <li>Geographic fraud distribution mapping across states and regions</li>
-                <li>Device-based fraud pattern identification and risk scoring</li>
-                <li>Time-series analysis of January transaction trends and anomalies</li>
-                <li>Merchant category insights and suspicious account flagging</li>
-                <li>Dynamic slicers and timelines for real-time data exploration</li>
-                <li>Executive summary dashboard with key fraud metrics and KPIs</li>
-                <li>Automated data refresh capabilities for continuous monitoring</li>
-                <li>Export functionality for regulatory reporting and compliance</li>
-            </ul>
-            <div class="modal-footer">
-                <a href="https://github.com/shayan-codes-405/FraudLens-360-Transaction-Fraud-Intelligence-Dashboard-.git" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> View GitHub</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 5 -->
-    <div class="modal" id="modal-project-5">
-        <div class="modal-content glass-card">
-            <span class="close-modal">&times;</span>
-            <div class="modal-gallery mt-1">
-                <img src="bank 1.png" alt="Slide 1">
-                <img src="bank 2.png" alt="Slide 2">
-                <img src="bank 3.png" alt="Slide 3">
-            </div>
-            <h2 class="modal-title">Bank Transaction Data Analysis Using Python</h2>
-            <div class="tech-stack modal-tags">
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>NumPy</span>
-                <span>Matplotlib</span>
-                <span>Seaborn</span>
-                <span>Jupyter</span>
-            </div>
-            <p class="modal-desc">
-                This comprehensive Python project demonstrates advanced data analysis techniques on bank transaction datasets. Leveraging the power of Python's data science ecosystem, the project performs end-to-end analysis from raw data processing to insightful visualizations and anomaly detection.
-            </p>
-            <ul class="modal-highlights">
-                <li>Data Cleaning and Preprocessing with Pandas and NumPy</li>
-                <li>Exploratory Data Analysis (EDA) with statistical summaries</li>
-                <li>Advanced data visualization using Matplotlib and Seaborn</li>
-                <li>Spending pattern analysis and customer segmentation</li>
-                <li>Income trend identification and financial behavior insights</li>
-                <li>Machine learning-based anomaly detection algorithms</li>
-                <li>Time series analysis for transaction patterns</li>
-                <li>Interactive dashboards with Plotly (optional extension)</li>
-                <li>Data export capabilities for reporting and integration</li>
-                <li>Modular code structure with reusable analysis functions</li>
-            </ul>
-            <div class="modal-footer">
-                <a href="https://github.com/shayan-codes-405/Bank-Transaction-Data-Analysis-Using-Python.git" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> View GitHub</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 6 -->
+    <!-- Modal FraudLens 360 -->
     <div class="modal" id="modal-project-2">
-        <div class="modal-content glass-card">
+        <div class="modal-content">
             <span class="close-modal">&times;</span>
-            
-            <div class="modal-gallery mt-1">
+            <div class="modal-gallery">
                 <img src="FraudLens UI 1.png" alt="Slide 1">
                 <img src="FraudLens UI 2.png" alt="Slide 2">
                 <img src="FraudLens Flow.png" alt="Slide 3">
             </div>
-
-            <h2 class="modal-title">Transaction Fraud Intelligence Dashboard - Transaction Fraud Intelligence Dashboard</h2>
+            <h2 class="modal-title">FraudLens 360 - Fraud Intelligence Dashboard</h2>
             <div class="tech-stack modal-tags">
-                <!-- <span>Excel</span> -->
-                <span>Power BI</span>
-                <span>Data Analysis</span>
+                <span>Power BI</span><span>DAX</span><span>Data Analytics</span><span>Power Query</span>
             </div>
-            <p class="modal-desc">
-                FraudLens 360 - Transaction Fraud Intelligence Dashboard - Transaction Fraud Intelligence Dashboard is a sophisticated analytics platform that combines Excel's data processing capabilities with Power BI's visualization power to create a comprehensive fraud detection and monitoring system. This dashboard provides real-time insights into fraudulent activities across multiple dimensions.
-            </p>
+            <p class="modal-desc">FraudLens 360 is a Power BI reporting dashboard designed to help risk teams
+                investigate financial anomalies, merchant category fraud ratios, and geographic transaction spikes.</p>
             <ul class="modal-highlights">
-                <li>Real-time transaction monitoring and anomaly detection</li>
-                <li>Advanced statistical modeling for fraud pattern recognition</li>
-                <li>Interactive Power BI dashboards with drill-down capabilities</li>
-                <li>Machine learning integration for predictive fraud scoring</li>
-                <li>Multi-dimensional analysis (geographic, temporal, behavioral)</li>
-                <li>Automated alert system for suspicious transactions</li>
-                <li>Compliance reporting and regulatory documentation</li>
-                <li>Historical trend analysis and forecasting</li>
-                <li>User behavior profiling and segmentation</li>
-                <li>Integration with existing banking systems and APIs</li>
+                <li>Real-time multi-dimensional filtering by location, transaction channel, and customer risk band.</li>
+                <li>Advanced DAX measures for calculating period-over-period fraud rates and loss totals.</li>
+                <li>Interactive charts for flagging suspicious account behaviors and unexpected transfer volumes.</li>
             </ul>
             <div class="modal-footer">
-                <a href="https://github.com/shayan-codes-405/Bank-Transaction-Fraud-Analytics.git" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> View GitHub</a>
+                <a href="https://github.com/shayan-codes-405/FraudLens-360-Transaction-Fraud-Intelligence-Dashboard-.git"
+                    target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> View GitHub Repository</a>
             </div>
         </div>
     </div>
 
-    <!-- Modal 3 removed -->
-
-    <!-- Modal 6 -->
-    <div class="modal" id="modal-project-6">
-        <div class="modal-content glass-card">
+    <!-- Modal Excel Fraud Intelligence -->
+    <div class="modal" id="modal-project-4">
+        <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <div class="modal-gallery mt-1">
+            <div class="modal-gallery">
+                <img src="excel 1.png" alt="Slide 1">
+                <img src="excel 2.png" alt="Slide 2">
+                <img src="excel 3.png" alt="Slide 3">
+            </div>
+            <h2 class="modal-title">Transaction Fraud Intelligence (Excel)</h2>
+            <div class="tech-stack modal-tags">
+                <span>MS Excel</span><span>Pivot Tables</span><span>Power Query</span><span>Data Cleaning</span>
+            </div>
+            <p class="modal-desc">A comprehensive Excel analytics project analyzing over 20,000 banking transactions to
+                unearth fraud distribution trends, device risks, and merchant anomalies.</p>
+            <ul class="modal-highlights">
+                <li>Cleaned raw transaction datasets using Power Query formula transformations.</li>
+                <li>Constructed dynamic Pivot Tables & Timeline slicers for temporal trend isolation.</li>
+                <li>Categorized high-risk device IDs and high-frequency transfer channels.</li>
+            </ul>
+            <div class="modal-footer">
+                <a href="https://github.com/shayan-codes-405/Transaction-Fraud-Intelligence-Dashboard-.git"
+                    target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> View GitHub Repository</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Bank Transaction EDA -->
+    <div class="modal" id="modal-project-5">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-gallery">
+                <img src="bank 1.png" alt="Slide 1">
+                <img src="bank 2.png" alt="Slide 2">
+                <img src="bank 3.png" alt="Slide 3">
+            </div>
+            <h2 class="modal-title">Bank Transaction Python EDA</h2>
+            <div class="tech-stack modal-tags">
+                <span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
+            </div>
+            <p class="modal-desc">Data analysis project applying Python's data science stack to examine banking
+                transaction logs, demographic spending patterns, and statistical distributions.</p>
+            <ul class="modal-highlights">
+                <li>Automated missing value handling, outlier detection, and datetime parsing with Pandas.</li>
+                <li>Formulated heatmaps, pairplots, and histogram charts using Seaborn.</li>
+                <li>Extracted customer spending insights to support target marketing segmentation.</li>
+            </ul>
+            <div class="modal-footer">
+                <a href="https://github.com/shayan-codes-405/Bank-Transaction-Data-Analysis-Using-Python.git"
+                    target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> View GitHub Repository</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ECOGROW -->
+    <div class="modal" id="modal-project-6">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-gallery">
                 <img src="EcoGrow 1.png" alt="Slide 1">
                 <img src="EcoGrow 2.png" alt="Slide 2">
                 <img src="EcoGrow 3.png" alt="Slide 3">
             </div>
             <h2 class="modal-title">ECOGROW Website</h2>
             <div class="tech-stack modal-tags">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>JavaScript</span>
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
             </div>
-            <p class="modal-desc">
-                ECOGROW is a custom-coded web portal strictly built to foster environmental stewardship. It successfully connects eco-conscious individuals and drives green donations.
-            </p>
+            <p class="modal-desc">ECOGROW is a web portal built to promote community environmental conservation, tree
+                planting initiatives, and eco-friendly donation drives.</p>
             <ul class="modal-highlights">
-                <li>Modern responsive UI built completely from scratch using vanilla languages.</li>
-                <li>Features dedicated interactive spaces for tracking community environmental events.</li>
-                <li>Robust client-side JavaScript form validation for secure data entry.</li>
-                <li>Optimized for maximum accessibility and seamless cross-device performance.</li>
+                <li>Clean responsive layout built from scratch with custom CSS flex & grid.</li>
+                <li>Client-side JavaScript form validation for secure event registrations.</li>
+                <li>Cross-browser accessibility and performance optimization.</li>
             </ul>
             <div class="modal-footer">
-                <a href="https://github.com/shayan-codes-405/ECOGROW.git" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> View GitHub</a>
+                <a href="https://github.com/shayan-codes-405/ECOGROW.git" target="_blank" class="btn btn-primary"><i
+                        class="fab fa-github"></i> View GitHub Repository</a>
             </div>
         </div>
     </div>
 
+    <!-- Education Section -->
+    <section id="education" class="education section-padding">
+        <div class="container fade-in">
+            <div class="section-header">
+                <h2 class="section-title">Education <span class="highlight">Timeline</span></h2>
+                <p class="section-subtitle">My academic foundations and computer science engineering journey.</p>
+            </div>
+            <div class="timeline">
+
+                <!-- Degree 1 -->
+                <div class="timeline-item glass-card fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-degree">B.Tech in Computer Science & Engineering</h3>
+                        <div class="timeline-institute-header">
+                            <img src="Lovely_Professional_University_logo.png" alt="LPU Logo"
+                                class="timeline-logo-badge">
+                            <h4 class="timeline-institute">Lovely Professional University (LPU), Punjab</h4>
+                        </div>
+                        <div class="timeline-footer">
+                            <span class="timeline-marks"><i class="fas fa-star"></i> CGPA: 7.41</span>
+                            <span style="color: var(--text-muted); font-size: 0.85rem;">2023 - 2027</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Degree 2 -->
+                <div class="timeline-item glass-card fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-degree">Intermediate (Class XII - Science)</h3>
+                        <div class="timeline-institute-header">
+                            <img src="Narayana_Schools_Logo.jpg" alt="Narayana Logo" class="timeline-logo-badge">
+                            <h4 class="timeline-institute">Narayana School</h4>
+                        </div>
+                        <div class="timeline-footer">
+                            <span class="timeline-marks"><i class="fas fa-award"></i> Aggregate: 65.4%</span>
+                            <span style="color: var(--text-muted); font-size: 0.85rem;">2022 - 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Degree 3 -->
+                <div class="timeline-item glass-card fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-degree">Matriculation (Class X)</h3>
+                        <div class="timeline-institute-header">
+                            <img src="Narayana_Schools_Logo.jpg" alt="Narayana Logo" class="timeline-logo-badge">
+                            <h4 class="timeline-institute">Narayana School</h4>
+                        </div>
+                        <div class="timeline-footer">
+                            <span class="timeline-marks"><i class="fas fa-trophy"></i> Aggregate: 92%</span>
+                            <span style="color: var(--text-muted); font-size: 0.85rem;">2020 - 2021</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Certificates Section -->
     <section id="certificates" class="certificates section-padding">
         <div class="container">
-            <h2 class="section-title">Certificates</h2>
-            <div class="projects-flex">
-                
+            <div class="section-header">
+                <h2 class="section-title">Certifications & <span class="highlight">Achievements</span></h2>
+                <p class="section-subtitle">Verified course accomplishments across Data Science, AI, Cybersecurity, Java, and Competitive Hackathons.</p>
+            </div>
+
+            <div class="certificates-grid">
+
                 <!-- Certificate 1 -->
-                <div class="project-card glass-card fade-in">
-                    <img src="Privacy and Security in Online Social Media_page-0001.jpg" class="real-project-img" alt="Certificate">
-                    <div class="project-info">
-                        <h3>NPTEL PRIVACY AND SECURITY</h3>
-                        <p class="project-desc">Comprehensive certification demonstrating proficiency in data privacy, cryptography fundamentals...</p>
-                        <div class="tech-stack">
-                            <span>Privacy</span>
-                            <span>Security</span>
+                <div class="cert-card trigger-modal fade-in" data-modal="modal-cert-1">
+                    <div class="cert-preview-wrapper">
+                        <img src="Privacy and Security in Online Social Media_page-0001.jpg"
+                            alt="Privacy & Security NPTEL Certificate" class="cert-preview-img">
+                        <div class="cert-hover-overlay">
+                            <span class="cert-expand-btn"><i class="fas fa-search-plus"></i> View Certificate</span>
                         </div>
-                        <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-cert-1">Read More</button>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">NPTEL Privacy & Security</h3>
+                        <p class="cert-desc">Comprehensive certification in online social media security, data privacy frameworks, and network security protocols.</p>
+                        <button class="btn btn-outline btn-sm cert-footer-btn trigger-modal" data-modal="modal-cert-1"><i class="fas fa-eye"></i> View Certificate</button>
                     </div>
                 </div>
-                
+
                 <!-- Certificate 2 -->
-                <div class="project-card glass-card fade-in">
-                    <img src="Java Maestro Certificate.jpg" class="real-project-img" alt="Certificate">
-                    <div class="project-info">
-                        <h3>JAVA MAESTRO TRAINING</h3>
-                        <p class="project-desc">Advanced training program covering object-oriented programming principles, data structures...</p>
-                        <div class="tech-stack">
-                            <span>Java</span>
-                            <span>OOPs</span>
+                <div class="cert-card trigger-modal fade-in" data-modal="modal-cert-2">
+                    <div class="cert-preview-wrapper">
+                        <img src="Java Maestro Certificate.jpg"
+                            alt="Java Maestro Training Certificate" class="cert-preview-img">
+                        <div class="cert-hover-overlay">
+                            <span class="cert-expand-btn"><i class="fas fa-search-plus"></i> View Certificate</span>
                         </div>
-                        <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-cert-2">Read More</button>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Java Maestro Training</h3>
+                        <p class="cert-desc">Advanced Java training program covering object-oriented programming principles, multi-threading, and Swing UI.</p>
+                        <button class="btn btn-outline btn-sm cert-footer-btn trigger-modal" data-modal="modal-cert-2"><i class="fas fa-eye"></i> View Certificate</button>
                     </div>
                 </div>
-                
+
                 <!-- Certificate 3 -->
-                <div class="project-card glass-card fade-in">
-                    <img src="Binary Blitz Hackathon _page-0001.jpg" class="real-project-img" alt="Certificate">
-                    <div class="project-info">
-                        <h3>BINARY BLITZ HACKATHON</h3>
-                        <p class="project-desc">Participated and demonstrated quick problem-solving and rapid prototyping skills under tight limits.</p>
-                        <div class="tech-stack">
-                            <span>Hackathon</span>
-                            <span>Prototyping</span>
+                <div class="cert-card trigger-modal fade-in" data-modal="modal-cert-3">
+                    <div class="cert-preview-wrapper">
+                        <img src="Binary Blitz Hackathon _page-0001.jpg"
+                            alt="Binary Blitz Hackathon Certificate" class="cert-preview-img">
+                        <div class="cert-hover-overlay">
+                            <span class="cert-expand-btn"><i class="fas fa-search-plus"></i> View Certificate</span>
                         </div>
-                        <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-cert-3">Read More</button>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Binary Blitz Hackathon</h3>
+                        <p class="cert-desc">Participated and built rapid software prototypes under competitive hackathon time constraints.</p>
+                        <button class="btn btn-outline btn-sm cert-footer-btn trigger-modal" data-modal="modal-cert-3"><i class="fas fa-eye"></i> View Certificate</button>
                     </div>
                 </div>
-                
+
                 <!-- Certificate 4 -->
-                <div class="project-card glass-card fade-in">
-                    <img src="Genrative ai.png" class="real-project-img" alt="Certificate">
-                    <div class="project-info">
-                        <h3>GEN AI NASSCOM</h3>
-                        <p class="project-desc">Certified in foundational Generative AI concepts by NASSCOM, focusing on understanding AI models...</p>
-                        <div class="tech-stack">
-                            <span>Gen AI</span>
-                            <span>Machine Learning</span>
+                <div class="cert-card trigger-modal fade-in" data-modal="modal-cert-4">
+                    <div class="cert-preview-wrapper">
+                        <img src="Genrative ai.png"
+                            alt="Gen AI NASSCOM Certificate" class="cert-preview-img">
+                        <div class="cert-hover-overlay">
+                            <span class="cert-expand-btn"><i class="fas fa-search-plus"></i> View Certificate</span>
                         </div>
-                        <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-cert-4">Read More</button>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Gen AI Foundation (NASSCOM)</h3>
+                        <p class="cert-desc">Certified in foundational Generative AI concepts by NASSCOM, focusing on understanding AI model pipelines.</p>
+                        <button class="btn btn-outline btn-sm cert-footer-btn trigger-modal" data-modal="modal-cert-4"><i class="fas fa-eye"></i> View Certificate</button>
                     </div>
                 </div>
-                
+
                 <!-- Certificate 5 -->
-                <div class="project-card glass-card fade-in">
-                    <img src="Build Generative Al Apps and Solutions with No-Code Tools_page-0001.jpg" class="real-project-img" alt="Certificate">
-                    <div class="project-info">
-                        <h3>NO-CODE GEN AI APPS</h3>
-                        <p class="project-desc">Build Generative AI Apps and Solutions with No-Code Tools. integrating AI capabilities without logic.</p>
-                        <div class="tech-stack">
-                            <span>No-Code AI</span>
-                            <span>Gen AI</span>
+                <div class="cert-card trigger-modal fade-in" data-modal="modal-cert-5">
+                    <div class="cert-preview-wrapper">
+                        <img src="Build Generative Al Apps and Solutions with No-Code Tools_page-0001.jpg"
+                            alt="No-Code Gen AI Certificate" class="cert-preview-img">
+                        <div class="cert-hover-overlay">
+                            <span class="cert-expand-btn"><i class="fas fa-search-plus"></i> View Certificate</span>
                         </div>
-                        <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-cert-5">Read More</button>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">No-Code Gen AI Solutions</h3>
+                        <p class="cert-desc">Building Generative AI applications and custom workflow integrations utilizing no-code AI tooling platforms.</p>
+                        <button class="btn btn-outline btn-sm cert-footer-btn trigger-modal" data-modal="modal-cert-5"><i class="fas fa-eye"></i> View Certificate</button>
                     </div>
                 </div>
 
                 <!-- Certificate 6 -->
-                <div class="project-card glass-card fade-in">
-                    <img src="Master Generative Al & Generative Al tools_page-0001.jpg" class="real-project-img" alt="Certificate">
-                    <div class="project-info">
-                        <h3>MASTER GENERATIVE AI</h3>
-                        <p class="project-desc">Master Generative AI & Generative AI tools (ChatGPT & more). Taught by Instructor Saad.</p>
-                        <div class="tech-stack">
-                            <span>ChatGPT</span>
-                            <span>Prompting</span>
+                <div class="cert-card trigger-modal fade-in" data-modal="modal-cert-6">
+                    <div class="cert-preview-wrapper">
+                        <img src="Master Generative Al & Generative Al tools_page-0001.jpg"
+                            alt="Master Generative AI Tools Certificate" class="cert-preview-img">
+                        <div class="cert-hover-overlay">
+                            <span class="cert-expand-btn"><i class="fas fa-search-plus"></i> View Certificate</span>
                         </div>
-                        <button class="btn btn-outline btn-sm trigger-modal mt-1" data-modal="modal-cert-6">Read More</button>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Master Generative AI & Tools</h3>
+                        <p class="cert-desc">Mastering LLM prompt engineering, productivity AI tools, and context framing protocols.</p>
+                        <button class="btn btn-outline btn-sm cert-footer-btn trigger-modal" data-modal="modal-cert-6"><i class="fas fa-eye"></i> View Certificate</button>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
 
     <!-- Certificate Modals -->
-    <!-- Modal Cert 1 -->
     <div class="modal" id="modal-cert-1">
-        <div class="modal-content glass-card">
+        <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <img src="Privacy and Security in Online Social Media_page-0001.jpg" class="modal-img" alt="Certificate 1">
-            <h2 class="modal-title">NPTEL PRIVACY AND SECURITY</h2>
-            <div class="tech-stack modal-tags">
-                <span>Privacy</span>
-                <span>Security</span>
+            <div class="cert-modal-body">
+                <h2 class="modal-title"><i class="fas fa-shield-alt" style="color: var(--accent-cyan);"></i> NPTEL Privacy & Security Certificate</h2>
+                <div class="cert-modal-img-container">
+                    <img src="Privacy and Security in Online Social Media_page-0001.jpg" class="cert-modal-img" alt="NPTEL Certificate">
+                </div>
+                <p class="modal-desc">Comprehensive certification demonstrating proficiency in data privacy, cryptography fundamentals, and network protection.</p>
+                <div class="modal-footer" style="width: 100%; text-align: center;">
+                    <a href="Privacy and Security in Online Social Media_page-0001.jpg" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Open Full Resolution Image</a>
+                </div>
             </div>
-            <p class="modal-desc">
-                Comprehensive certification demonstrating proficiency in data privacy, cryptography fundamentals, and modern cybersecurity protocols.
-            </p>
-            <ul class="modal-highlights">
-                <li>Gained deep knowledge on safeguarding application networks.</li>
-                <li>Studied practical symmetric and asymmetric cryptography setups.</li>
-            </ul>
         </div>
     </div>
-    <!-- Modal Cert 2 -->
+
     <div class="modal" id="modal-cert-2">
-        <div class="modal-content glass-card">
+        <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <img src="Java Maestro Certificate.jpg" class="modal-img" alt="Certificate 2">
-            <h2 class="modal-title">JAVA MAESTRO TRAINING</h2>
-            <div class="tech-stack modal-tags">
-                <span>Java</span>
-                <span>OOPs</span>
+            <div class="cert-modal-body">
+                <h2 class="modal-title"><i class="devicon-java-plain colored"></i> Java Maestro Training Certificate</h2>
+                <div class="cert-modal-img-container">
+                    <img src="Java Maestro Certificate.jpg" class="cert-modal-img" alt="Java Maestro Certificate">
+                </div>
+                <p class="modal-desc">Advanced training program covering object-oriented programming principles, data structures, and Swing desktop GUIs.</p>
+                <div class="modal-footer" style="width: 100%; text-align: center;">
+                    <a href="Java Maestro Certificate.jpg" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Open Full Resolution Image</a>
+                </div>
             </div>
-            <p class="modal-desc">
-                Advanced training program covering object-oriented programming principles, data structures, and enterprise application development using Java.
-            </p>
-            <ul class="modal-highlights">
-                <li>Built core multithreading and networking logic inside JVM natively.</li>
-                <li>Created sophisticated UI systems utilizing Java Swing paradigms entirely.</li>
-            </ul>
         </div>
     </div>
-    <!-- Modal Cert 3 -->
+
     <div class="modal" id="modal-cert-3">
-        <div class="modal-content glass-card">
+        <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <img src="Binary Blitz Hackathon _page-0001.jpg" class="modal-img" alt="Certificate 3">
-            <h2 class="modal-title">BINARY BLITZ HACKATHON</h2>
-            <div class="tech-stack modal-tags">
-                <span>Hackathon</span>
-                <span>Prototyping</span>
+            <div class="cert-modal-body">
+                <h2 class="modal-title"><i class="fas fa-trophy" style="color: var(--accent-amber);"></i> Binary Blitz Hackathon Certificate</h2>
+                <div class="cert-modal-img-container">
+                    <img src="Binary Blitz Hackathon _page-0001.jpg" class="cert-modal-img" alt="Binary Blitz Certificate">
+                </div>
+                <p class="modal-desc">Demonstrated problem-solving and rapid prototyping under competitive hackathon time constraints.</p>
+                <div class="modal-footer" style="width: 100%; text-align: center;">
+                    <a href="Binary Blitz Hackathon _page-0001.jpg" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Open Full Resolution Image</a>
+                </div>
             </div>
-            <p class="modal-desc">
-                Participated and demonstrated quick problem-solving and rapid prototyping skills under competitive time constraints to build an innovative software solution.
-            </p>
-            <ul class="modal-highlights">
-                <li>Delivered a working prototype directly confronting complex prompt guidelines.</li>
-                <li>Demonstrated intense stress-tolerance mapping agile software directly in short periods.</li>
-            </ul>
         </div>
     </div>
-    <!-- Modal Cert 4 -->
+
     <div class="modal" id="modal-cert-4">
-        <div class="modal-content glass-card">
+        <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <img src="Genrative ai.png" class="modal-img" alt="Certificate 4">
-            <h2 class="modal-title">GEN AI NASSCOM</h2>
-            <div class="tech-stack modal-tags">
-                <span>Gen AI</span>
-                <span>Machine Learning</span>
+            <div class="cert-modal-body">
+                <h2 class="modal-title"><i class="fas fa-brain" style="color: var(--accent-purple);"></i> Gen AI NASSCOM Certificate</h2>
+                <div class="cert-modal-img-container">
+                    <img src="Genrative ai.png" class="cert-modal-img" alt="Gen AI NASSCOM Certificate">
+                </div>
+                <p class="modal-desc">Certified in foundational Generative AI concepts by NASSCOM, focusing on AI model design and ethical boundaries.</p>
+                <div class="modal-footer" style="width: 100%; text-align: center;">
+                    <a href="Genrative ai.png" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Open Full Resolution Image</a>
+                </div>
             </div>
-            <p class="modal-desc">
-                Certified in foundational Generative AI concepts by NASSCOM, focusing on understanding AI models, ethical considerations, and practical implementations.
-            </p>
-            <ul class="modal-highlights">
-                <li>Validated strict understanding of ethical boundaries strictly limiting unsafe output generations.</li>
-                <li>Understood prompt pipeline construction to refine logical data flows actively.</li>
-            </ul>
         </div>
     </div>
-    <!-- Modal Cert 5 -->
+
     <div class="modal" id="modal-cert-5">
-        <div class="modal-content glass-card">
+        <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <img src="Build Generative Al Apps and Solutions with No-Code Tools_page-0001.jpg" class="modal-img" alt="Certificate 5">
-            <h2 class="modal-title">NO-CODE GEN AI APPS</h2>
-            <div class="tech-stack modal-tags">
-                <span>No-Code AI</span>
-                <span>Gen AI</span>
+            <div class="cert-modal-body">
+                <h2 class="modal-title"><i class="fas fa-robot" style="color: var(--accent-rose);"></i> No-Code Gen AI Applications Certificate</h2>
+                <div class="cert-modal-img-container">
+                    <img src="Build Generative Al Apps and Solutions with No-Code Tools_page-0001.jpg" class="cert-modal-img" alt="No-Code Gen AI Certificate">
+                </div>
+                <p class="modal-desc">Building Generative AI applications and automated solutions with visual no-code tools.</p>
+                <div class="modal-footer" style="width: 100%; text-align: center;">
+                    <a href="Build Generative Al Apps and Solutions with No-Code Tools_page-0001.jpg" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Open Full Resolution Image</a>
+                </div>
             </div>
-            <p class="modal-desc">
-                Build Generative AI Apps and Solutions with No-Code Tools. Focuses on integrating AI capabilities without writing complex logic.
-            </p>
-            <ul class="modal-highlights">
-                <li>Architected intelligent chatbots and tools without hard-coding logic frameworks.</li>
-                <li>Deployed production-ready machine learning pipelines rapidly via advanced GUI editors.</li>
-            </ul>
         </div>
     </div>
-    <!-- Modal Cert 6 -->
+
     <div class="modal" id="modal-cert-6">
-        <div class="modal-content glass-card">
+        <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <img src="Master Generative Al & Generative Al tools_page-0001.jpg" class="modal-img" alt="Certificate 6">
-            <h2 class="modal-title">MASTER GENERATIVE AI</h2>
-            <div class="tech-stack modal-tags">
-                <span>ChatGPT</span>
-                <span>Prompting</span>
+            <div class="cert-modal-body">
+                <h2 class="modal-title"><i class="fas fa-magic" style="color: var(--accent-emerald);"></i> Master Generative AI Tools Certificate</h2>
+                <div class="cert-modal-img-container">
+                    <img src="Master Generative Al & Generative Al tools_page-0001.jpg" class="cert-modal-img" alt="Master Gen AI Tools Certificate">
+                </div>
+                <p class="modal-desc">Mastering advanced LLM prompt engineering, context framing, and productivity AI workflows.</p>
+                <div class="modal-footer" style="width: 100%; text-align: center;">
+                    <a href="Master Generative Al & Generative Al tools_page-0001.jpg" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Open Full Resolution Image</a>
+                </div>
             </div>
-            <p class="modal-desc">
-                Master Generative AI & Generative AI tools (ChatGPT & more). Taught by Instructor Saad focusing on advanced prompting and tooling.
-            </p>
-            <ul class="modal-highlights">
-                <li>Studied hyper-parameter optimization prompting specific LLM context framing contexts.</li>
-                <li>Tested various advanced jailbreak and context injection prevention protocols thoroughly.</li>
-            </ul>
         </div>
     </div>
-
-
 
     <!-- Resume Section -->
     <section id="resume" class="resume section-padding">
         <div class="container fade-in">
-            <h2 class="section-title">Resume</h2>
+            <div class="section-header">
+                <h2 class="section-title">Curriculum <span class="highlight">Vitae</span></h2>
+                <p class="section-subtitle">Comprehensive overview of technical qualifications, machine learning background, and academic credentials.</p>
+            </div>
+
+            <!-- Executive Resume Highlights Grid -->
+            <div class="cv-specs-grid">
+                <div class="cv-spec-card glass-card spec-role">
+                    <div class="cv-spec-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="cv-spec-info">
+                        <span class="cv-spec-label">Target Positions</span>
+                        <span class="cv-spec-value">Data Scientist • ML Engineer • Data Analyst</span>
+                    </div>
+                </div>
+                <div class="cv-spec-card glass-card spec-degree">
+                    <div class="cv-spec-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="cv-spec-info">
+                        <span class="cv-spec-label">Education</span>
+                        <span class="cv-spec-value">B.Tech in CSE (LPU, 2023 - 2027)</span>
+                    </div>
+                </div>
+                <div class="cv-spec-card glass-card spec-stack">
+                    <div class="cv-spec-icon"><i class="fas fa-layer-group"></i></div>
+                    <div class="cv-spec-info">
+                        <span class="cv-spec-label">Core Tech Stack</span>
+                        <span class="cv-spec-value">Python, SQL, Machine Learning, Power BI</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resume Viewer Container -->
             <div class="resume-container glass-card">
-                <iframe src="Shayan CV.pdf" class="resume-frame" title="Shayan's Resume"></iframe>
+                <!-- Window Header Bar -->
+                <div class="cv-window-header">
+                    <div class="cv-window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="cv-window-title"><i class="fas fa-file-pdf" style="color: var(--accent-rose);"></i> Shayan_Akhtar_Data_Science_Resume.pdf</div>
+                    <div class="cv-window-actions">
+                        <a href="Shayan CV.pdf" target="_blank" class="cv-action-link" title="Open Fullscreen"><i class="fas fa-expand-alt"></i></a>
+                        <a href="Shayan CV.pdf" download class="cv-action-link" title="Download PDF"><i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+
+                <!-- PDF Frame Wrapper -->
+                <div class="resume-frame-wrapper">
+                    <iframe src="Shayan CV.pdf" class="resume-frame" title="Shayan Akhtar Resume"></iframe>
+                </div>
+
+                <!-- Action Footer Buttons -->
                 <div class="resume-actions">
-                    <a href="Shayan CV.pdf" download class="btn btn-primary">Download Resume</a>
-                    <a href="Shayan CV.pdf" target="_blank" class="btn btn-outline">Open Fullscreen</a>
+                    <a href="Shayan CV.pdf" download class="btn btn-primary btn-lg">
+                        <i class="fas fa-file-download"></i> Download Official Resume (PDF)
+                    </a>
+                    <a href="Shayan CV.pdf" target="_blank" class="btn btn-outline btn-lg">
+                        <i class="fas fa-external-link-alt"></i> Open Fullscreen PDF
+                    </a>
                 </div>
             </div>
         </div>
@@ -997,12 +1119,17 @@
     <!-- Contact Section -->
     <section id="contact" class="contact section-padding">
         <div class="container fade-in">
-            <h2 class="section-title">Contact</h2>
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <p class="section-subtitle">I'm currently seeking new full-time Data Science, Data Analytics, and
+                    Machine Learning opportunities.</p>
+            </div>
+
             <div class="contact-grid">
-                
                 <div class="contact-info glass-card">
                     <h3>Let's Connect</h3>
-                    <p>I am looking for new opportunities and collaborations. My inbox is always open!</p>
+                    <p>Whether you have an inquiry, project proposal, or career opportunity, feel free to reach out
+                        directly via email or social links!</p>
                     <div class="contact-links">
                         <a href="mailto:shayanakhtar405@gmail.com" class="contact-link">
                             <div class="icon-box"><i class="fas fa-envelope"></i></div>
@@ -1012,7 +1139,8 @@
                             <div class="icon-box"><i class="fab fa-github"></i></div>
                             <span>github.com/shayan-codes-405</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/shayan-akhtar-492456393" target="_blank" class="contact-link">
+                        <a href="https://www.linkedin.com/in/shayan-akhtar-492456393" target="_blank"
+                            class="contact-link">
                             <div class="icon-box"><i class="fab fa-linkedin"></i></div>
                             <span>linkedin.com/in/shayan-akhtar-492456393</span>
                         </a>
@@ -1022,21 +1150,22 @@
                 <div class="contact-form-container glass-card">
                     <form class="contact-form" id="contact-form">
                         <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="from_name" required placeholder="Your Name">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="from_name" required placeholder="John Doe">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="from_email" required placeholder="your.email@example.com">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="from_email" required placeholder="john@example.com">
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Hello Shayan..."></textarea>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Hello Shayan, I'd like to connect regarding..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+                        <button type="submit" class="btn btn-primary submit-btn"><i class="fas fa-paper-plane"></i> Send
+                            Message</button>
                     </form>
                 </div>
-
             </div>
         </div>
     </section>
@@ -1045,18 +1174,23 @@
     <footer>
         <div class="container footer-content">
             <div class="footer-social">
-                <a href="https://github.com/shayan-codes-405" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/shayan-akhtar-492456393" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/shayan-codes-405" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shayan-akhtar-492456393" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
                 <a href="mailto:shayanakhtar405@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
-            <p class="footer-tagline">"Built with passion and purpose"</p>
-            <p class="footer-bottom">Turning ideas into reality through code</p>
-            <p class="copyright">&copy; 2024 Shayan Akhtar. All rights reserved.</p>
+            <p class="footer-tagline">"Built with passion, performance & precision"</p>
+            <p class="footer-bottom">Turning ideas into real-world applications</p>
+            <p class="copyright">&copy; 2026 Shayan Akhtar. All rights reserved.</p>
         </div>
-    <!-- Back to Top Button & Toast Container -->
+    </footer>
+
+    <!-- Toast Notifications & Back-to-Top -->
     <div id="toast-container"></div>
     <button id="back-to-top" aria-label="Back to Top"><i class="fas fa-chevron-up"></i></button>
 
     <script src="script.js"></script>
 </body>
+
 </html>
