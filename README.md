@@ -1,6 +1,6 @@
 # 🌟 Shayan Akhtar — Personal Portfolio Website
 
-[![Portfolio Web](https://img.shields.io/badge/Portfolio-Live_Website-06b6d4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://github.com/shayan-codes-405/Shayan_Portfolio)
+[![Portfolio Web](https://img.shields.io/badge/Portfolio-Live_Website-06b6d4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://shayanak2005-portfolio.netlify.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shayan-akhtar-492456393)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-a855f7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shayan-codes-405)
 [![Email](https://img.shields.io/badge/Email-Direct_Contact-10b981?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shayanakhtar405@gmail.com)
