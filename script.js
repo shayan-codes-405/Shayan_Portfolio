@@ -465,4 +465,61 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, 2000);
 
+    // ----------------------------------------------------
+    // AI Video CV & Resume Switcher Logic
+    // ----------------------------------------------------
+    const btnPdfView = document.getElementById('btn-pdf-view');
+    const btnVideoView = document.getElementById('btn-video-view');
+    const pdfCvPanel = document.getElementById('pdf-cv-panel');
+    const videoCvPanel = document.getElementById('video-cv-panel');
+    const aiVideoPlayer = document.getElementById('ai-video-player');
+    const videoOverlay = document.getElementById('video-overlay');
+    const videoPlayBtn = document.getElementById('video-play-btn');
+    const playVideoAction = document.getElementById('play-video-action');
+
+    if (btnPdfView && btnVideoView && pdfCvPanel && videoCvPanel) {
+        btnPdfView.addEventListener('click', () => {
+            btnPdfView.classList.add('active');
+            btnVideoView.classList.remove('active');
+            pdfCvPanel.style.display = 'block';
+            videoCvPanel.style.display = 'none';
+            if (aiVideoPlayer && !aiVideoPlayer.paused) {
+                aiVideoPlayer.pause();
+            }
+        });
+
+        btnVideoView.addEventListener('click', () => {
+            btnVideoView.classList.add('active');
+            btnPdfView.classList.remove('active');
+            videoCvPanel.style.display = 'block';
+            pdfCvPanel.style.display = 'none';
+        });
+    }
+
+    const startVideo = () => {
+        if (aiVideoPlayer) {
+            if (videoOverlay) videoOverlay.classList.add('hidden');
+            aiVideoPlayer.play().catch(err => {
+                console.log('Video playback error or video_cv.mp4 missing:', err);
+                if (typeof showToast === 'function') {
+                    showToast('Place video_cv.mp4 in your portfolio folder to enable video play!', 'info');
+                }
+            });
+        }
+    };
+
+    if (videoPlayBtn) videoPlayBtn.addEventListener('click', startVideo);
+    if (playVideoAction) playVideoAction.addEventListener('click', startVideo);
+
+    if (aiVideoPlayer) {
+        aiVideoPlayer.addEventListener('pause', () => {
+            if (aiVideoPlayer.currentTime === 0 || aiVideoPlayer.ended) {
+                if (videoOverlay) videoOverlay.classList.remove('hidden');
+            }
+        });
+        aiVideoPlayer.addEventListener('ended', () => {
+            if (videoOverlay) videoOverlay.classList.remove('hidden');
+        });
+    }
+
 });

@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shayan Akhtar | Data Scientist & Data Analytics Portfolio</title>
     <meta name="description"
-        content="Portfolio of Shayan Akhtar - Data Scientist & Data Analytics Specialist proficient in Python, Machine Learning, Data Analytics, Power BI, SQL, Streamlit, and Predictive Modeling.">
+        content="Portfolio of Shayan Akhtar - Data Scientist & Data Analytics Specialist proficient in Python, Machine Learning, Data Analytics, Power BI, SQL, FastAPI,Render and Predictive Modeling.">
     <meta name="keywords"
-        content="Shayan Akhtar, Portfolio, Data Scientist, Data Analyst, Machine Learning, Data Science, Python, Power BI, Streamlit, SQL">
+        content="Shayan Akhtar, Portfolio, Data Scientist, Data Analyst, Machine Learning, Data Science, Python, Power BI, FastAPI, SQL">
     <meta name="author" content="Shayan Akhtar">
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Shayan Akhtar | Data Science & Analytics Portfolio">
@@ -239,7 +239,7 @@
                     </div>
                     <div class="skill-tile">
                         <div class="skill-tile-icon"><i class="fas fa-laptop-code" style="color: #ff4b4b;"></i></div>
-                        <div class="skill-tile-name">Streamlit</div>
+                        <div class="skill-tile-name">FastAPI</div>
                         <span class="skill-tile-badge">ML Deployment</span>
                     </div>
                 </div>
@@ -370,14 +370,14 @@
 
                     <div class="featured-img-wrapper" data-images="Telecom Churn.png, Telecom Churn 2.png">
                         <img src="Telecom Churn.png" class="real-project-img"
-                            alt="Telecom Customer Churn Prediction Live Streamlit App">
+                            alt="Telecom Customer Churn Prediction Live Render App">
                         <div class="project-overlay">
                             <button class="overlay-action-btn trigger-modal" data-modal="modal-project-churn"
                                 title="Quick View Details">
                                 <i class="fas fa-eye"></i>
                             </button>
-                            <a href="https://churn-predictor-telecom-customer.streamlit.app/" target="_blank"
-                                class="overlay-action-btn" title="Launch Streamlit Live App">
+                            <a href="https://telco-churn-70pb.onrender.com/" target="_blank"
+                                class="overlay-action-btn" title="Launch Render Live Web App">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
@@ -386,7 +386,7 @@
                     <div class="featured-info">
                         <h3>Telecom Customer Churn Prediction</h3>
                         <p class="project-desc">Engineered an end-to-end Machine Learning model to predict customer
-                            churn using usage patterns, account contracts, and support tickets. Deployed via Streamlit
+                            churn using usage patterns, account contracts, and support tickets. Deployed via Render
                             with real-time risk scores and interactive feature importance charts.</p>
 
                         <div class="featured-metrics-grid">
@@ -396,7 +396,7 @@
                             </div>
                             <div class="metric-tag">
                                 <i class="fas fa-rocket"></i>
-                                <span>Deployed on Streamlit Cloud</span>
+                                <span>Deployed on Render</span>
                             </div>
                             <div class="metric-tag">
                                 <i class="fas fa-chart-bar"></i>
@@ -411,14 +411,15 @@
                         <div class="tech-stack">
                             <span>Python</span>
                             <span>Scikit-learn</span>
-                            <span>Streamlit</span>
+                            <span>FastAPI</span>
+                            <span>Render</span>
                             <span>Pandas</span>
                             <span>NumPy</span>
                             <span>Matplotlib</span>
                         </div>
 
                         <div class="project-buttons">
-                            <a href="https://churn-predictor-telecom-customer.streamlit.app/" target="_blank"
+                            <a href="https://telco-churn-70pb.onrender.com/" target="_blank"
                                 class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Launch Live
                                 App</a>
                             <button class="btn btn-outline btn-sm trigger-modal" data-modal="modal-project-churn"><i
@@ -624,7 +625,9 @@
             </div>
             <h2 class="modal-title">Telecom Customer Churn Prediction</h2>
             <div class="tech-stack modal-tags">
-                <span>Python</span><span>Scikit-learn</span><span>Streamlit</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
+                <span>Python</span><span>Scikit-learn</span><span>Render
+
+                </span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
             </div>
             <p class="modal-desc">Engineered an end-to-end Machine Learning pipeline to analyze customer demographics,
                 payment behavior, contract lengths, and tech support usage to accurately forecast customer churn risk.
@@ -634,12 +637,12 @@
                     encoding.</li>
                 <li>Trained supervised classification models (Random Forest / Logistic Regression) to compute retention
                     probability scores.</li>
-                <li>Deployed an interactive Streamlit web dashboard featuring real-time risk classification, model
+                <li>Deployed an interactive Render web dashboard featuring real-time risk classification, model
                     confidence meters, and downloadable diagnostic reports.</li>
             </ul>
             <div class="modal-footer">
-                <a href="https://churn-predictor-telecom-customer.streamlit.app/" target="_blank"
-                    class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Launch Live Streamlit App</a>
+                <a href="https://telco-churn-70pb.onrender.com/" target="_blank"
+                    class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Launch Live Render App</a>
             </div>
         </div>
     </div>
@@ -1082,8 +1085,18 @@
                 </div>
             </div>
 
-            <!-- Resume Viewer Container -->
-            <div class="resume-container glass-card">
+            <!-- CV View Mode Switcher -->
+            <div class="cv-toggle-wrapper">
+                <button class="cv-toggle-btn active" id="btn-pdf-view">
+                    <i class="fas fa-file-pdf"></i> Document Resume (PDF)
+                </button>
+                <button class="cv-toggle-btn" id="btn-video-view">
+                    <i class="fas fa-video"></i> AI Video CV <span class="badge-ai">Interactive</span>
+                </button>
+            </div>
+
+            <!-- PDF Resume Viewer Panel -->
+            <div id="pdf-cv-panel" class="resume-container glass-card cv-panel active">
                 <!-- Window Header Bar -->
                 <div class="cv-window-header">
                     <div class="cv-window-dots">
@@ -1110,6 +1123,45 @@
                     </a>
                     <a href="Shayan CV.pdf" target="_blank" class="btn btn-outline btn-lg">
                         <i class="fas fa-external-link-alt"></i> Open Fullscreen PDF
+                    </a>
+                </div>
+            </div>
+
+            <!-- AI Video CV Panel -->
+            <div id="video-cv-panel" class="resume-container glass-card cv-panel" style="display: none;">
+                <div class="cv-window-header">
+                    <div class="cv-window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="cv-window-title"><i class="fas fa-play-circle" style="color: var(--accent-cyan);"></i> Shayan_Akhtar_AI_Video_CV.mp4</div>
+                    <div class="cv-window-actions">
+                        <span class="badge-ai"><i class="fas fa-magic"></i> AI Generated Intro</span>
+                    </div>
+                </div>
+
+                <div class="video-cv-wrapper">
+                    <video id="ai-video-player" class="video-cv-player" controls poster="Profile_pic.png">
+                        <source src="video_cv.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video player.
+                    </video>
+                    <div class="video-placeholder-overlay" id="video-overlay">
+                        <div class="video-play-icon" id="video-play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <h3 class="video-overlay-title">Shayan Akhtar — AI Video Resume</h3>
+                        <p class="video-overlay-desc">Watch a 90-second AI voice & avatar introduction summarizing my ML expertise, projects, and data science background.</p>
+                        <span class="video-duration-tag"><i class="fas fa-clock"></i> 1 min 15 sec</span>
+                    </div>
+                </div>
+
+                <div class="resume-actions">
+                    <button class="btn btn-primary btn-lg" id="play-video-action">
+                        <i class="fas fa-play"></i> Play Video Resume
+                    </button>
+                    <a href="Shayan CV.pdf" download class="btn btn-outline btn-lg">
+                        <i class="fas fa-file-download"></i> Download PDF CV
                     </a>
                 </div>
             </div>

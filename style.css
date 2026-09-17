@@ -2265,3 +2265,147 @@ footer {
         padding-left: 1.8rem;
     }
 }
+
+/* ====================================================
+   AI Video CV & Switcher Components
+   ==================================================== */
+.cv-toggle-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cv-toggle-btn {
+    padding: 0.85rem 1.8rem;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.cv-toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-primary);
+    transform: translateY(-2px);
+}
+
+.cv-toggle-btn.active {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.25), rgba(6, 182, 212, 0.25));
+    border-color: var(--accent-cyan);
+    color: #fff;
+    box-shadow: 0 4px 25px rgba(6, 182, 212, 0.25);
+}
+
+.badge-ai {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.6rem;
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-indigo));
+    color: #fff;
+    border-radius: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.video-cv-wrapper {
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #090d16;
+    aspect-ratio: 16 / 9;
+    max-height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.video-cv-player {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.video-placeholder-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(15, 23, 42, 0.8), rgba(9, 13, 22, 0.96));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    z-index: 2;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.video-placeholder-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.video-play-icon {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-indigo), var(--accent-cyan));
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.5);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+    margin-bottom: 1.2rem;
+    padding-left: 4px;
+}
+
+.video-play-icon:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 45px rgba(6, 182, 212, 0.85);
+}
+
+.video-overlay-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.video-overlay-desc {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    max-width: 500px;
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+}
+
+.video-duration-tag {
+    font-size: 0.82rem;
+    color: var(--accent-cyan);
+    background: rgba(6, 182, 212, 0.12);
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    padding: 0.35rem 0.9rem;
+    border-radius: 20px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
