@@ -33,23 +33,29 @@ Welcome to the official source repository for **Shayan Akhtar's** personal portf
 
 ## 🚀 Key Featured Projects
 
-### 1. 📊 Bank Customer Churn Predictor
-- **Tech Stack**: Python, Scikit-Learn, Pandas, Power BI
-- **Description**: Machine Learning classification system predicting customer churn risk using demographic and behavioral metrics, complemented by an interactive Power BI business analytics dashboard.
+### 1. 🌾 AgroBuddy — Mandi-to-Market Supply Chain Optimizer
+- **Live App**: [https://agro-buddy-psi.vercel.app/](https://agro-buddy-psi.vercel.app/)
+- **Tech Stack**: Python, FastAPI, React 19, DuckDB, LangGraph, Scikit-Learn, Apache ECharts, Groq Llama-3.3-70B
+- **Description**: End-to-end agricultural supply chain intelligence platform integrating 60,000+ mandi records, high-throughput DuckDB OLAP engine, Mandi Risk Index, 7-day arrival forecasting, and an agentic decision copilot for plain-English queries.
 
-### 2. 🛡️ FraudLens AI — Financial Anomaly Detection
+### 2. 📊 Telecom Customer Churn Prediction
+- **Live App**: [https://telco-churn-70pb.onrender.com/](https://telco-churn-70pb.onrender.com/)
+- **Tech Stack**: Python, Scikit-Learn, FastAPI, Render, Pandas, NumPy, Matplotlib
+- **Description**: Machine Learning classification system predicting customer churn risk using demographic and behavioral metrics, complemented by an interactive live web application.
+
+### 3. 🛡️ FraudLens AI — Financial Anomaly Detection
 - **Tech Stack**: Python, Random Forest, XGBoost, Feature Engineering
 - **Description**: Real-time transaction fraud identification model trained to detect anomalous patterns and high-risk financial transfers.
 
-### 3. 🐍 PyDebug AI — Python Code Analyzer
+### 4. 🐍 PyDebug AI — Python Code Analyzer
 - **Tech Stack**: Python, Abstract Syntax Trees (AST), Static Analysis
 - **Description**: Automated debugging tool that analyzes Python script syntax, flags potential runtime exceptions, and suggests code optimizations.
 
-### 4. 🌿 EcoGrow — Smart Farming Recommendation System
+### 5. 🌿 EcoGrow — Smart Farming Recommendation System
 - **Tech Stack**: Python, Scikit-Learn, IoT Data Processing
 - **Description**: Predictive machine learning model recommending optimal crop selection based on soil nutrients, rainfall, and climate metrics.
 
-### 5. 🚘 Automated Toll Collection System
+### 6. 🚘 Automated Toll Collection System
 - **Tech Stack**: Java (Swing GUI), MySQL Database, JDBC
 - **Description**: Desktop software application managing vehicle passage logging, fee calculations, and database record keeping.
 

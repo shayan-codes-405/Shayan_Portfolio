@@ -465,6 +465,55 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, 2000);
 
+    // Gallery Tab Navigation for Multi-slide Modals (AgroBuddy)
+    const galleryTabs = document.querySelectorAll('.gallery-tab');
+    galleryTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const slideIndex = parseInt(tab.getAttribute('data-slide'), 10);
+            const modal = tab.closest('.modal-content');
+            if (modal) {
+                const gallery = modal.querySelector('.modal-gallery');
+                if (gallery && gallery.children[slideIndex]) {
+                    const slide = gallery.children[slideIndex];
+                    gallery.scrollTo({
+                        left: slide.offsetLeft - gallery.offsetLeft,
+                        behavior: 'smooth'
+                    });
+                    modal.querySelectorAll('.gallery-tab').forEach((t, i) => {
+                        t.classList.toggle('active', i === slideIndex);
+                    });
+                }
+            }
+        });
+    });
+
+    // Update active tab on gallery scroll
+    document.querySelectorAll('.modal-gallery').forEach(gallery => {
+        gallery.addEventListener('scroll', () => {
+            const modal = gallery.closest('.modal-content');
+            if (!modal) return;
+            const tabs = modal.querySelectorAll('.gallery-tab');
+            if (!tabs.length) return;
+
+            const slides = gallery.children;
+            const scrollPos = gallery.scrollLeft;
+            for (let i = 0; i < slides.length; i++) {
+                const slide = slides[i];
+                const left = slide.offsetLeft - gallery.offsetLeft;
+                if (Math.abs(scrollPos - left) < (slide.clientWidth / 2)) {
+                    tabs.forEach((t, idx) => {
+                        t.classList.toggle('active', idx === i);
+                    });
+                    const activeTab = modal.querySelector('.gallery-tab.active');
+                    if (activeTab) {
+                        activeTab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                    }
+                    break;
+                }
+            }
+        });
+    });
+
     // ----------------------------------------------------
     // AI Video CV & Resume Switcher Logic
     // ----------------------------------------------------
