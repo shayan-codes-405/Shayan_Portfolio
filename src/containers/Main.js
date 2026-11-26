@@ -30,7 +30,7 @@ export default class Main extends Component {
   }
   render() {
     return (
-      <BrowserRouter basename="/">
+      <BrowserRouter basename={process.env.PUBLIC_URL || "/"}>
         <Switch>
           <Route
             path="/"
