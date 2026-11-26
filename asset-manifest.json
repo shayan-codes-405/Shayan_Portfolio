@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Shayan_Portfolio/static/css/main.ebb0dde9.chunk.css",
-    "main.js": "/Shayan_Portfolio/static/js/main.8d02d39e.chunk.js",
-    "main.js.map": "/Shayan_Portfolio/static/js/main.8d02d39e.chunk.js.map",
+    "main.css": "/Shayan_Portfolio/static/css/main.75dfc53e.chunk.css",
+    "main.js": "/Shayan_Portfolio/static/js/main.0a6067c7.chunk.js",
+    "main.js.map": "/Shayan_Portfolio/static/js/main.0a6067c7.chunk.js.map",
     "runtime-main.js": "/Shayan_Portfolio/static/js/runtime-main.6d90016b.js",
     "runtime-main.js.map": "/Shayan_Portfolio/static/js/runtime-main.6d90016b.js.map",
     "static/js/2.c26ca092.chunk.js": "/Shayan_Portfolio/static/js/2.c26ca092.chunk.js",
     "static/js/2.c26ca092.chunk.js.map": "/Shayan_Portfolio/static/js/2.c26ca092.chunk.js.map",
     "index.html": "/Shayan_Portfolio/index.html",
-    "precache-manifest.af8252ead068317747aa66f735ace1c1.js": "/Shayan_Portfolio/precache-manifest.af8252ead068317747aa66f735ace1c1.js",
+    "precache-manifest.faa866cbd28c683f098ce59156caf4cb.js": "/Shayan_Portfolio/precache-manifest.faa866cbd28c683f098ce59156caf4cb.js",
     "service-worker.js": "/Shayan_Portfolio/service-worker.js",
-    "static/css/main.ebb0dde9.chunk.css.map": "/Shayan_Portfolio/static/css/main.ebb0dde9.chunk.css.map",
+    "static/css/main.75dfc53e.chunk.css.map": "/Shayan_Portfolio/static/css/main.75dfc53e.chunk.css.map",
     "static/media/AI Chatbot 2.png": "/Shayan_Portfolio/static/media/AI Chatbot 2.679d8ea2.png",
     "static/media/AI Chatbot 3.png": "/Shayan_Portfolio/static/media/AI Chatbot 3.acae1b55.png",
     "static/media/index.css": "/Shayan_Portfolio/static/media/Montserrat-Regular.ee653992.ttf",
@@ -93,7 +93,7 @@
   "entrypoints": [
     "static/js/runtime-main.6d90016b.js",
     "static/js/2.c26ca092.chunk.js",
-    "static/css/main.ebb0dde9.chunk.css",
-    "static/js/main.8d02d39e.chunk.js"
+    "static/css/main.75dfc53e.chunk.css",
+    "static/js/main.0a6067c7.chunk.js"
   ]
 }
