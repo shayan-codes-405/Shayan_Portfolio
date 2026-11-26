@@ -1,37 +1,11 @@
 {
   "data": [
     {
-      "id": "proj-agrobuddy",
-      "name": "AgroBuddy - Agricultural Supply Chain Intelligence",
-      "createdAt": "2026-01-15T10:00:00Z",
-      "url": "https://github.com/shayan-codes-405/Agrobuddy",
-      "description": "Architected an end-to-end agricultural supply chain platform unifying 60,000+ mandi records, DuckDB OLAP engine, LangGraph agentic copilot, and Groq Llama-3.3-70B for distress sale detection.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "React",
-          "iconifyClass": "logos-react"
-        },
-        {
-          "name": "DuckDB",
-          "iconifyClass": "simple-icons:duckdb"
-        },
-        {
-          "name": "FastAPI",
-          "iconifyClass": "simple-icons:fastapi"
-        }
-      ]
-    },
-    {
       "id": "proj-telecom-churn",
       "name": "Telecom Customer Churn Prediction & Retention Analytics",
-      "createdAt": "2025-11-20T12:00:00Z",
-      "url": "https://github.com/shayan-codes-405/Telecom_Customer_Churn_Prediction",
-      "description": "End-to-end predictive machine learning pipeline with 85%+ accuracy for customer attrition forecasting, feature importance extraction, and automated retention strategy simulation.",
+      "createdAt": "2026-07-15T12:00:00Z",
+      "url": "https://telco-churn-70pb.onrender.com/",
+      "description": "Modeled a machine learning classification pipeline using Random Forest across 4,250 subscriber records and 20 behavioral features, achieving 91.4% ROC-AUC score to preemptively identify at-risk accounts. Deployed live on Render with Chart.js analytics.",
       "isFork": false,
       "languages": [
         {
@@ -47,43 +21,65 @@
           "iconifyClass": "simple-icons:pandas"
         },
         {
-          "name": "Streamlit",
-          "iconifyClass": "simple-icons:streamlit"
+          "name": "Render",
+          "iconifyClass": "simple-icons:render"
         }
       ]
     },
     {
-      "id": "proj-easyinvoice",
-      "name": "EasyInvoice - Automated Invoice Parsing & Accounting",
-      "createdAt": "2025-08-10T09:00:00Z",
-      "url": "https://github.com/shayan-codes-405/EasyInvoice",
-      "description": "Intelligent document processing pipeline ingesting invoices, receipts, and bank statements using OCR and computer vision to extract structured financial ledgers and tax computations.",
+      "id": "proj-easyinvoice-pro",
+      "name": "EasyInvoice Pro - Multi-Branch Retail ERP & Invoicing Engine",
+      "createdAt": "2026-09-10T09:00:00Z",
+      "url": "https://github.com/shayan-codes-405/EasyInvoice-Pro.git",
+      "description": "Enterprise retail operating platform supporting automated wholesale-to-retail stock reconciliation, GST compliance, on-the-fly vector A4 PDF invoice generation, and real-time revenue visualization.",
       "isFork": false,
       "languages": [
         {
           "name": "Python",
           "iconifyClass": "logos-python"
-        },
-        {
-          "name": "OpenCV",
-          "iconifyClass": "logos-opencv"
         },
         {
           "name": "FastAPI",
           "iconifyClass": "simple-icons:fastapi"
         },
         {
-          "name": "SQLite",
-          "iconifyClass": "simple-icons:sqlite"
+          "name": "React",
+          "iconifyClass": "logos-react"
+        },
+        {
+          "name": "MongoDB",
+          "iconifyClass": "simple-icons:mongodb"
         }
       ]
     },
     {
-      "id": "proj-fraudlens",
-      "name": "FraudLens - Real-Time Credit Card Fraud Detection",
+      "id": "proj-fraudlens-360",
+      "name": "FraudLens 360 - Transaction Fraud Intelligence Dashboard",
       "createdAt": "2025-05-18T14:00:00Z",
-      "url": "https://github.com/shayan-codes-405/FraudLens",
-      "description": "Low-latency financial transaction anomaly detection platform utilizing Isolation Forests and ensemble gradient boosting (XGBoost) for real-time fraudulent transaction classification.",
+      "url": "https://github.com/shayan-codes-405/FraudLens-360-Transaction-Fraud-Intelligence-Dashboard-.git",
+      "description": "End-to-end Power BI analytics solution analyzing 20,000+ bank transactions to detect fraud patterns, monitor customer behavior, and implement dynamic DAX measures in a Star Schema data model.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Power BI",
+          "iconifyClass": "simple-icons:powerbi"
+        },
+        {
+          "name": "DAX",
+          "iconifyClass": "simple-icons:microsoftexcel"
+        },
+        {
+          "name": "Data Modeling",
+          "iconifyClass": "simple-icons:databricks"
+        }
+      ]
+    },
+    {
+      "id": "proj-agrobuddy",
+      "name": "AgroBuddy – Mandi-to-Market Supply Chain Optimizer",
+      "createdAt": "2026-09-20T10:00:00Z",
+      "url": "https://github.com/shayan-codes-405/Agrobuddy",
+      "description": "Architected an end-to-end agricultural supply chain intelligence platform unifying 60,000+ cleaned mandi records, DuckDB in-memory OLAP engine, Scikit-learn risk modeling, and LangGraph agentic decision copilot.",
       "isFork": false,
       "languages": [
         {
@@ -91,74 +87,78 @@
           "iconifyClass": "logos-python"
         },
         {
-          "name": "XGBoost",
-          "iconifyClass": "simple-icons:xgboost"
+          "name": "DuckDB",
+          "iconifyClass": "simple-icons:duckdb"
+        },
+        {
+          "name": "FastAPI",
+          "iconifyClass": "simple-icons:fastapi"
+        },
+        {
+          "name": "React",
+          "iconifyClass": "logos-react"
+        }
+      ]
+    },
+    {
+      "id": "proj-fraud-excel",
+      "name": "Transaction Fraud Intelligence (Excel BI Dashboard)",
+      "createdAt": "2025-04-10T11:00:00Z",
+      "url": "https://github.com/shayan-codes-405/Transaction-Fraud-Intelligence-Dashboard-.git",
+      "description": "Comprehensive financial transaction intelligence dashboard created in Microsoft Excel using advanced pivot tables, dynamic KPI filters, and statistical anomaly indicators.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Excel",
+          "iconifyClass": "simple-icons:microsoftexcel"
+        },
+        {
+          "name": "Analytics",
+          "iconifyClass": "simple-icons:chartdotjs"
+        }
+      ]
+    },
+    {
+      "id": "proj-bank-eda",
+      "name": "Bank Transaction Python EDA & Statistical Analysis",
+      "createdAt": "2025-03-05T08:00:00Z",
+      "url": "https://github.com/shayan-codes-405/Bank-Transaction-Data-Analysis-Using-Python.git",
+      "description": "Deep exploratory data analysis on banking transaction patterns using Python, Pandas, Seaborn, and Matplotlib to uncover transaction velocity trends and risk metrics.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
         },
         {
           "name": "Pandas",
           "iconifyClass": "simple-icons:pandas"
         },
         {
-          "name": "Streamlit",
-          "iconifyClass": "simple-icons:streamlit"
-        }
-      ]
-    },
-    {
-      "id": "proj-pydebug",
-      "name": "PyDebug - Intelligent Python Diagnostics Assistant",
-      "createdAt": "2025-03-12T11:00:00Z",
-      "url": "https://github.com/shayan-codes-405/PyDebug",
-      "description": "Automated developer diagnostics CLI tool parsing Python AST trees and execution stack traces to provide plain-language explanations and syntax/logic fix suggestions.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
+          "name": "Matplotlib",
           "iconifyClass": "logos-python"
-        },
-        {
-          "name": "CLI",
-          "iconifyClass": "simple-icons:gnubash"
         }
       ]
     },
     {
-      "id": "proj-java-enterprise",
-      "name": "Java Multi-Tier Enterprise Management System",
-      "createdAt": "2024-10-05T08:00:00Z",
-      "url": "https://github.com/shayan-codes-405/Java-Enterprise-App",
-      "description": "Robust enterprise management software built with layered architecture, JDBC transactions, secure authentication, and administrative dashboards conforming to OOP standards.",
+      "id": "proj-ecogrow",
+      "name": "ECOGROW Sustainable Agriculture Platform",
+      "createdAt": "2024-11-12T16:00:00Z",
+      "url": "https://github.com/shayan-codes-405/ECOGROW.git",
+      "description": "Modern web platform focused on sustainable agriculture practices, ecological monitoring, and farmer community resources with clean responsive user interface.",
       "isFork": false,
       "languages": [
-        {
-          "name": "Java",
-          "iconifyClass": "logos-java"
-        },
-        {
-          "name": "MySQL",
-          "iconifyClass": "logos-mysql"
-        }
-      ]
-    },
-    {
-      "id": "proj-tolltax",
-      "name": "TollTax - Automated Highway Toll & Vehicle Tracking",
-      "createdAt": "2024-04-22T16:00:00Z",
-      "url": "https://github.com/shayan-codes-405/TollTax-System",
-      "description": "Automated vehicle toll collection and compliance monitoring platform supporting RFID categorization, tariff calculation, dynamic receipt generation, and transaction auditing.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Java",
-          "iconifyClass": "logos-java"
-        },
-        {
-          "name": "MySQL",
-          "iconifyClass": "logos-mysql"
-        },
         {
           "name": "HTML5",
           "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS3",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
         }
       ]
     }

@@ -29,14 +29,7 @@ export default function Greeting(props) {
                 {greeting.subTitle}
               </p>
               <SocialMedia theme={theme} />
-              <div className="portfolio-repo-btn-div" style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "15px" }}>
-                <Button
-                  text="⭐ Star On Github"
-                  newTab={true}
-                  href={greeting.portfolio_repository}
-                  theme={theme}
-                  className="portfolio-repo-btn"
-                />
+              <div className="portfolio-repo-btn-div" style={{ display: "flex", gap: "14px", flexWrap: "wrap", marginTop: "20px" }}>
                 <Button
                   text="See My Resume"
                   href="/resume"
