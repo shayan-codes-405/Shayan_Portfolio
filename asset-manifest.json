@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.49037029.chunk.css",
-    "main.js": "/static/js/main.8d357286.chunk.js",
-    "main.js.map": "/static/js/main.8d357286.chunk.js.map",
+    "main.js": "/static/js/main.1f31c760.chunk.js",
+    "main.js.map": "/static/js/main.1f31c760.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2781e2dc.js",
     "runtime-main.js.map": "/static/js/runtime-main.2781e2dc.js.map",
     "static/js/2.15947e21.chunk.js": "/static/js/2.15947e21.chunk.js",
     "static/js/2.15947e21.chunk.js.map": "/static/js/2.15947e21.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.21e5fd4951504011fffeeb0aa8ef014b.js": "/precache-manifest.21e5fd4951504011fffeeb0aa8ef014b.js",
+    "precache-manifest.bdeaff5227f09836ee27c63592545cfc.js": "/precache-manifest.bdeaff5227f09836ee27c63592545cfc.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.49037029.chunk.css.map": "/static/css/main.49037029.chunk.css.map",
     "static/media/AI Chatbot 2.png": "/static/media/AI Chatbot 2.679d8ea2.png",
@@ -94,6 +94,6 @@
     "static/js/runtime-main.2781e2dc.js",
     "static/js/2.15947e21.chunk.js",
     "static/css/main.49037029.chunk.css",
-    "static/js/main.8d357286.chunk.js"
+    "static/js/main.1f31c760.chunk.js"
   ]
 }
